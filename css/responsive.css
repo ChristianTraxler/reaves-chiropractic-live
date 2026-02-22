@@ -1,0 +1,29 @@
+/* ───────────────────────────────────────────── */
+/*  RESPONSIVE                                   */
+/* ───────────────────────────────────────────── */
+@media (max-width: 900px) {
+  .hero-grid { grid-template-columns: 1fr; gap: 50px; }
+  .hero-image-area { display: none; }
+  .benefits-layout { grid-template-columns: 1fr; }
+  .benefits-visual { display: none; }
+  .forms-inner { grid-template-columns: 1fr; gap: 40px; }
+  .about-layout { grid-template-columns: 1fr; gap: 50px; }
+  .about-image-area { max-width: 400px; margin: 0 auto; }
+  .footer-inner { grid-template-columns: 1fr 1fr; gap: 40px; }
+  .footer-brand { grid-column: 1 / -1; }
+  .process-steps::before { display: none; }
+}
+@media (max-width: 640px) {
+  .nav-links { display: none; }
+  .hamburger { display: flex; }
+  .hero-ctas { flex-direction: column; align-items: flex-start; }
+  .products-grid { grid-template-columns: 1fr 1fr; }
+  .testimonials-grid { grid-template-columns: 1fr; }
+  .about-values { grid-template-columns: 1fr; }
+  .footer-inner { grid-template-columns: 1fr; }
+  .cta-contact { gap: 24px; }
+  .footer-bottom { flex-direction: column; align-items: flex-start; }
+}
+@media (max-width: 400px) {
+  .products-grid { grid-template-columns: 1fr; }
+}

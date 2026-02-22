@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>About Us — Reaves Chiropractic Health Centre</title>
+	<script>
+	(function(){var d=document.documentElement,t=localStorage.getItem('theme'),dk=t==='dark'||(t!=='light'&&window.matchMedia('(prefers-color-scheme:dark)').matches);if(dk)d.classList.add('dark-mode');var m=document.createElement('meta');m.name='theme-color';m.content=dk?'#0f1520':'#eef2f6';document.head.appendChild(m);})();
+	</script>
+	<link rel="preconnect" href="https://fonts.googleapis.com" />
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+	<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet" />
+	<link rel="icon" type="image/x-icon" href="favicon.ico">
+	<link rel="icon" type="image/png" href="favicon.png">
+	<link rel="apple-touch-icon" href="assets/images/apple-touch-icon.png">
+	<link rel="stylesheet" href="css/default.css" />
+	<link rel="stylesheet" href="css/styles.css" />
+	<link rel="stylesheet" href="css/responsive.css" />
+	<link rel="stylesheet" href="css/about.css" />
+	<link rel="stylesheet" href="css/dark-mode.css" />
+	</head>
+
+	<body>
+		<!-- ─── NAV ──────────────────────────────────── -->
+		<nav id="nav">
+			<div class="container">
+				<div class="nav-inner">
+					<a href="index.html" class="nav-logo">
+						<img src="assets/images/Reaves-Chiropractic-Logo.png" alt="Reaves Chiropractic Logo" class="nav-logo-img">
+						<div>Reaves Chiropractic
+						<span>Health Centre</span></div>
+					</a>
+					<div class="nav-links">
+						<a href="index.html#benefits">Benefits</a>
+						<a href="products.html">Products</a>
+						<a href="index.html#process">How It Works</a>
+						<a href="index.html#about">About</a>
+						<a href="salt-therapy.html">Salt Therapy</a>
+						<a href="patient_forms/New_Patient_Forms.zip" download class="btn-outline nav-cta">Download Forms</a>
+					</div>
+					<button class="theme-toggle" onclick="toggleTheme()" aria-label="Toggle dark mode">
+						<svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+						<svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
+					</button>
+					<div class="hamburger" onclick="toggleMenu()">
+						<span></span><span></span><span></span>
+					</div>
+				</div>
+			</div>
+		</nav>
+
+		<!-- ─── MOBILE MENU ───────────────────────────── -->
+		<div id="mobile-menu">
+			<a href="index.html#benefits" onclick="toggleMenu()">Benefits</a>
+			<a href="products.html" onclick="toggleMenu()">Products</a>
+			<a href="index.html#process" onclick="toggleMenu()">How It Works</a>
+			<a href="index.html#testimonials" onclick="toggleMenu()">Reviews</a>
+			<a href="index.html#about" onclick="toggleMenu()">About</a>
+			<a href="salt-therapy.html" onclick="toggleMenu()">Salt Therapy</a>
+			<a href="patient_forms/New_Patient_Forms.zip" download onclick="toggleMenu()">Download Forms</a>
+		</div>
+
+		<!-- ─── HERO ──────────────────────────────────── -->
+		<section id="hero" class="about-hero">
+			<div class="hero-blob-1"></div>
+			<div class="hero-blob-2"></div>
+			<div class="container">
+				<div class="hero-grid">
+					<div class="hero-content">
+						<div class="hero-eyebrow reveal">Our Story</div>
+						<h1 class="hero-title reveal reveal-delay-1">
+							A Family Tradition<br>of <em>Healing Others</em>
+						</h1>
+						<p class="hero-sub reveal reveal-delay-2">
+							For over 70 years, the Reaves family has been dedicated to providing exceptional chiropractic care to
+							the community — rooted in honesty, integrity, and genuine compassion.
+						</p>
+						<div class="hero-ctas reveal reveal-delay-3">
+							<a href="#our-story" class="btn-primary">Read Our Story</a>
+							<a href="index.html" class="btn-outline">Back to Home</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- ─── OUR STORY ────────────────────────────── -->
+		<section id="our-story">
+			<div class="container">
+				<div class="story-container">
+					<div class="benefits-header">
+						<span class="benefits-eyebrow">About Us</span>
+						<h2 class="reveal">Our Story</h2>
+					</div>
+
+					<p class="story-quote reveal">"This family has a tradition of healing others"</p>
+
+					<div class="story-text">
+						<p class="reveal">On April 11th, the family of the late Henry Reaves of Conover hosted a patient appreciation day at Reaves Chiropractic Health Centre in Newton, where Reaves' son, Ray Reaves, continues his father's tradition of providing chiropractic care to the community. The occasion was the 60th anniversary of the year Henry Reaves opened his first chiropractic office in Newton. The turnout took the Reaves family by surprise: About 700 people showed up, so many guests that office personnel had to request permission from nearby businesses to use their parking lots. The story doesn't begin in Newton or in 1954, however; it starts in the small town of Hamlet in 1949, when Henry Reaves, then a 19-year-old service station attendant, considered being a chiropractor. He knew nothing about the field except that his best friend's brother was in the profession.</p>
+
+						<p class="reveal">Henry Reaves ended up studying at Indianapolis's Lincoln Chiropractic College, which, at the time, admitted students without a college education. Classes were rigorous, but Reaves excelled. A year or so into his studies, Reaves excelled at a second pursuit: the heart of Indiana native Marjorie Harris. At her father's behest, the Arthur Jordan Conservatory of Music student reluctantly attended a square dance in Crawfordsville, Ind. It was not Marjorie's sort of music, but the handsome chiropractic student who caught her eye certainly was her sort of man. The pair wed a year later. Marjorie Reaves worked in an insurance office while Henry Reaves finished his courses. When the school required that Reaves practice on volunteers, Marjorie's mother grabbed a carload of friends and drove them to Indianapolis, where each obligingly climbed onto an adjustment table and let Reaves exercise his newly acquired skills. Following Reaves' graduation, he and Marjorie moved to Hamlet temporarily, then settled in Newton, because "Henry liked being close to the mountains, and he liked the climate," said Marjorie.</p>
+
+						<p class="reveal">The first of 60 years began with a pregnant Marjorie and a yellow house that served as both home and office. Attracting patients was the first order of business, and it was a tall one. "Chiropractic was not as accepted a profession as it is today," said daughter Debbie Reaves Spencer. "I feel that Dad was a pioneer in the field, as there were not many at the time he started practicing." People slowly warmed to Reaves' methods for tackling aches and pains. He charged $3 per visit or whatever a patient had to offer. "We got paid with eggs, a chicken, a camping tent- a lot of food through the years," said Marjorie. The practice outgrew the yellow house and then a variety of rented Newton locations until Reaves built his own office on 21st Street in Newton. In addition to Debbie, the Reaveses had Ray and a daughter Melonie, now Melonie Humphries, Ray was all set as a car mechanic until an all-nighter under the hood of a Chevette with a puzzling knock left him with a painful back and the notion that maybe his dad's career was something to consider. Within days of telling his father he might be more interested in the mechanics of the human body than in vehicles, chiropractic school literature arrived in Ray's mailbox.</p>
+
+						<p class="reveal">"Henry could see where (chiropractic care) was going," said Marjorie, referring to people's growing interest in alternative, natural methods of healing. Ray graduated from Life University in Marietta, Ga., in 1985 and joined his father's practice. Patients were a bit wary at first. Maybe the younger Reaves could tune cars, but could he tame aching backs? "It was tough building a practice within a practice," said Ray. Ray had big shoes to fill. People trusted his father not only as a healer but also as a wise, gentle man who made everyone feel respected. Over time, Ray earned people's confidence, and the practice of chiropractic earned people's appreciation. Henry Reaves retired in 1994.</p>
+
+						<p class="reveal">"When we went to computers in 1992, Dad said, 'It's time for me to exit,'" said Ray. "Back then, Dad used his fingers to go down the spine to feel for misalignment," Ray said. "He used his hands to adjust." Today Ray uses computerized technology that analyzes and adjusts. Henry Reaves died in 2010, and Ray carries on his legacy. In a year or so, Diana Spencer, Henry's grandchild and daughter of Debbie and Hickory dentist Dale Spencer, will graduate from Life University and become a third-generation chiropractor. So why the huge turnout April 11? "We've been close to 40,000 new patients since 1954," said Ray. These days, people would give up a lot of things before they'd relinquish their regular visits with their chiropractor. The profession has come a long way in the Catawba Valley, and Henry Reaves was among the leaders of the pack.</p>
+					</div>
+					<div style="text-align:center;margin-top:48px;" class="reveal">
+						<a href="assets/images/history.png" target="_blank" class="btn-primary">View Original Newspaper Article</a>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- ─── OUR STAFF ────────────────────────────── -->
+		<section id="our-staff">
+			<div class="container">
+				<div class="benefits-header">
+					<span class="benefits-eyebrow">The Team</span>
+					<h2 class="reveal">Our Staff</h2>
+				</div>
+				<div class="staff-grid">
+					<div class="staff-card reveal">
+						<div class="staff-icon">SM</div>
+						<h3>Sherry Miller</h3>
+						<p class="staff-role">Office Manager</p>
+						<p class="staff-since">Since May '76</p>
+					</div>
+					<div class="staff-card reveal reveal-delay-1">
+						<div class="staff-icon">LL</div>
+						<h3>Linda Lovelace</h3>
+						<p class="staff-role">EMR Administration & X-Ray Tech</p>
+						<p class="staff-since">Since April '01</p>
+					</div>
+					<div class="staff-card reveal reveal-delay-2">
+						<div class="staff-icon">KB</div>
+						<h3>Kristy Buff</h3>
+						<p class="staff-role">Certified Chiropractic Assistant</p>
+						<p class="staff-since">Since Oct. '19</p>
+					</div>
+					<div class="staff-card reveal reveal-delay-3">
+						<div class="staff-icon">JB</div>
+						<h3>Jaylen Barnes</h3>
+						<p class="staff-role">Certified Chiropractic Assistant</p>
+						<p class="staff-since">Since '24</p>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- ─── CTA ───────────────────────────────────── -->
+		<section id="cta" class="about-cta">
+			<div class="cta-blob cta-blob-1"></div>
+			<div class="cta-blob cta-blob-2"></div>
+			<div class="container">
+				<div class="cta-box reveal">
+					<span style="display:inline-block;font-size:0.8rem;letter-spacing:0.15em;text-transform:uppercase;color:rgba(168,196,162,0.8);margin-bottom:16px;">Continuing a Legacy of Care</span>
+					<h2>Ready to Experience<br><em>the Reaves Difference?</em></h2>
+					<p>Join the thousands of patients who have trusted our family with their health since 1954. Download your patient forms and take the first step.</p>
+					<div class="cta-buttons">
+						<a href="patient_forms/New_Patient_Forms.zip" download class="btn-primary" style="background:var(--sage)">Download Patient Forms</a>
+						<a href="index.html" class="btn-outline" style="color:var(--sage-light);border-color:rgba(168,196,162,0.4);">Back to Home</a>
+					</div>
+					<div class="cta-contact">
+						<div class="cta-contact-item">
+							<span>Call Us</span>
+							<a href="tel:+18284642080">(828) 464-2080</a>
+						</div>
+						<div class="cta-divider"></div>
+						<div class="cta-contact-item">
+							<span>Location</span>
+							<a href="https://maps.apple.com/?address=630+W+21st+St,+Newton,+NC+28658" class="cta-location-link">630 W 21st, Newton, NC 28658</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- ─── FOOTER ────────────────────────────────── -->
+		<footer>
+			<div class="container">
+				<div class="footer-inner">
+					<div class="footer-brand">
+						<a href="index.html" class="nav-logo">
+							<img src="assets/images/Reaves-Chiropractic-Logo.png" alt="Reaves Chiropractic Logo" class="nav-logo-img">
+							<div>Reaves Chiropractic
+							<span>Health Centre</span></div>
+						</a>
+						<p>Express natural wellness in people with the most effective ways to attain optimum health. Focus on overcoming dis-ease by caring for the sick and suffering with honesty and integrity while caring enough to make necessary sacrifices to positively impact their lives.</p>
+					</div>
+					<div class="footer-col">
+						<h4>Navigate</h4>
+						<ul>
+							<li><a href="index.html#benefits">Benefits</a></li>
+							<li><a href="products.html">Products</a></li>
+							<li><a href="index.html#process">How It Works</a></li>
+							<li><a href="index.html#testimonials">Testimonials</a></li>
+							<li><a href="index.html#about">About</a></li>
+							<li><a href="salt-therapy.html">Salt Therapy</a></li>
+							<li><a href="patient_forms/New_Patient_Forms.zip" download>Download Forms</a></li>
+						</ul>
+					</div>
+					<div class="footer-col">
+						<h4>Contact</h4>
+						<ul>
+							<li><a href="tel:+18284642080">(828) 464-2080 - (Phone)</a></li>
+							<li><a href="tel:">(828) 464-2133 - (Fax)</a></li>
+							<li><a href="https://maps.apple.com/?address=630+W+21st+St,+Newton,+NC" class="footer-address">630 W
+								21st St<br />Newton, NC 28658</a></li>
+						</ul>
+					</div>
+					<div class="footer-hours">
+						<h4>Office Hours</h4>
+						<div class="hour-row"><span class="day">Monday</span><span class="time">8:30am – 12pm, 1:30pm - 5:30pm</span></div>
+						<div class="hour-row"><span class="day">Tuesday</span><span class="time">Closed</span></div>
+						<div class="hour-row"><span class="day">Wednesday</span><span class="time">8:30am – 12pm, 1:30pm - 5:30pm</span></div>
+						<div class="hour-row"><span class="day">Thursday</span><span class="time">8:30am – 12pm, 1:30pm - 5:30pm</span></div>
+						<div class="hour-row"><span class="day">Friday</span><span class="time">8:30am – 12pm, 1:30pm - 5:30pm</span></div>
+						<div class="hour-row"><span class="day">Saturday</span><span class="time">Closed</span></div>
+						<div class="hour-row"><span class="day">Sunday</span><span class="time">Closed</span></div>
+					</div>
+				</div>
+				<div class="footer-bottom">
+					<p>&copy; 2025 Reaves Chiropractic Health Centre. All rights reserved.</p>
+<!--				<div class="footer-links">
+						<a href="#">Privacy Policy</a>
+						<a href="#">Terms of Service</a>
+						<a href="#">Accessibility</a>
+					</div>-->
+				</div>
+			</div>
+		</footer>
+
+		<!-- ─── SCROLL TO TOP ─────────────────────────── -->
+		<button id="scroll-top" onclick="window.scrollTo({top:0,behavior:'smooth'})">&#8593;</button>
+
+		<script>
+		/* ─── NAV SCROLL ─────────── */
+		const nav = document.getElementById('nav');
+		const scrollTopBtn = document.getElementById('scroll-top');
+		window.addEventListener('scroll', () => {
+			nav.classList.toggle('scrolled', window.scrollY > 40);
+			scrollTopBtn.classList.toggle('visible', window.scrollY > 400);
+		});
+
+		/* ─── MOBILE MENU ─────────── */
+		function toggleMenu() {
+			const menu = document.getElementById('mobile-menu');
+			const hamburger = document.querySelector('.hamburger');
+			const isOpen = menu.classList.toggle('open');
+			hamburger.classList.toggle('active', isOpen);
+			document.body.style.overflow = isOpen ? 'hidden' : '';
+		}
+
+		/* ─── SCROLL REVEAL ─────────── */
+		const reveals = document.querySelectorAll('.reveal');
+		const observer = new IntersectionObserver((entries) => {
+			entries.forEach(entry => {
+				if (entry.isIntersecting) {
+					entry.target.classList.add('visible');
+				}
+			});
+		}, { threshold: 0.1, rootMargin: '0px 0px -40px 0px' });
+		reveals.forEach(el => observer.observe(el));
+
+		/* ─── DARK MODE TOGGLE ─────────── */
+		function toggleTheme() {
+			const d = document.documentElement;
+			d.classList.add('theme-transition');
+			d.classList.toggle('dark-mode');
+			const isDark = d.classList.contains('dark-mode');
+			localStorage.setItem('theme', isDark ? 'dark' : 'light');
+			document.querySelector('meta[name="theme-color"]').content = isDark ? '#0f1520' : '#eef2f6';
+			setTimeout(() => d.classList.remove('theme-transition'), 600);
+		}
+		</script>
+	</body>
+</html>

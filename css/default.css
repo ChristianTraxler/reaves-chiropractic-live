@@ -1,0 +1,26 @@
+/* ─── CSS VARIABLES ────────────────────────── */
+:root {
+  --cream: #eef2f6;
+  --warm-white: #f6f8fb;
+  --sage: #835592;
+  --sage-light: #a878b8;
+  --sage-dark: #6a4078;
+  --terracotta: #c47a5a;
+  --terracotta-light: #e8a882;
+  --bark: #6b7a92;
+  --sand: #b8c4d4;
+  --deep: #0a1628;
+  --mid: #5a6a82;
+  --radius-sm: 20px;
+  --radius-md: 40px;
+  --radius-lg: 80px;
+  --radius-pill: 200px;
+  --white: #fff;
+  --nav-bg: rgba(238,242,246,0.95);
+  --terracotta-dark: #b06548;
+  --avatar-1: #bdd8e8;
+  --avatar-2: #d5c4b5;
+  --avatar-3: #c0cee0;
+  --shadow-soft: 0 8px 40px rgba(10,22,40,0.08);
+  --shadow-med: 0 16px 60px rgba(10,22,40,0.12);
+}

@@ -1,0 +1,175 @@
+/* ─── SALT THERAPY PAGE COLOR OVERRIDES ─────── */
+/* Remap sage greens to Himalayan salt tones, except nav-logo & nav-cta */
+html.salt-page {
+  --sage: #c47a5a;
+  --sage-light: #e8a882;
+  --sage-dark: #a85d3a;
+}
+
+/* Keep nav logo green */
+.nav-logo { color: #4a6b45 !important; }
+.footer-brand .nav-logo { color: #a8c4a2 !important; }
+
+/* Keep Download Forms button green */
+.nav-cta.btn-outline {
+  color: #4a6b45 !important;
+  border-color: #7d9b76 !important;
+}
+.nav-cta.btn-outline:hover {
+  background: #7d9b76 !important;
+  color: #fff !important;
+}
+
+/* Hero blobs — warm salt tones */
+.hero-blob-1 {
+  background: radial-gradient(circle at 40% 40%, rgba(232,168,130,0.35) 0%, rgba(232,168,130,0.08) 60%, transparent 80%);
+}
+.hero-blob-2 {
+  background: radial-gradient(circle at 60% 60%, rgba(196,122,90,0.18) 0%, transparent 70%);
+}
+
+/* Hero title em */
+.hero-title em { color: #a85d3a; }
+
+/* Hero eyebrow */
+.hero-eyebrow {
+  color: #a85d3a;
+  background: rgba(196,122,90,0.12);
+}
+.hero-eyebrow::before { background: #c47a5a; }
+
+/* Pain icon backgrounds */
+.pain-icon { background: rgba(196,122,90,0.2); }
+
+/* Process step num & ring dots */
+.step-num { background: #c47a5a; }
+.step-circle:hover { border-color: #e8a882; }
+.process-steps::before {
+  background: linear-gradient(90deg, transparent, #e8a882, #e8a882, transparent);
+}
+
+/* FAQ benefit-num Q circles */
+#faq .benefit-num {
+  background: rgba(196,122,90,0.15);
+  color: #a85d3a;
+}
+
+/* Testimonial card quote mark */
+.testimonial-card::before { color: rgba(196,122,90,0.15); }
+
+/* CTA overrides */
+.cta-blob-1 { background: radial-gradient(circle, rgba(232,168,130,0.2) 0%, transparent 70%); }
+.cta-blob-2 { background: radial-gradient(circle, rgba(196,122,90,0.15) 0%, transparent 70%); }
+.cta-box::before {
+  background: radial-gradient(ellipse at 50% 0%, rgba(196,122,90,0.15) 0%, transparent 60%);
+}
+
+/* Scroll-to-top button */
+#scroll-top {
+  background: #c47a5a;
+  box-shadow: 0 4px 20px rgba(196,122,90,0.4);
+}
+#scroll-top:hover { background: #a85d3a; }
+
+/* Footer link hover */
+.footer-col ul a:hover { color: #e8a882; }
+.footer-bottom a:hover { color: #e8a882; }
+
+/* Keep office hours green */
+.hour-row .time { color: #a8c4a2; }
+
+/* ───────────────────────────────────────────── */
+/*  SALT THERAPY PAGE LAYOUT                     */
+/* ───────────────────────────────────────────── */
+
+/* Hero — centered single column */
+#hero.salt-hero { min-height: auto; padding: 160px 0 80px; }
+.salt-hero .hero-grid { grid-template-columns: 1fr; }
+.salt-hero .hero-content { text-align: center; max-width: 720px; margin: 0 auto; }
+.salt-hero .hero-eyebrow { margin: 0 auto 24px; }
+.salt-hero .hero-sub { max-width: 600px; margin: 0 auto 40px; }
+.salt-hero .hero-ctas { justify-content: center; align-items: center; }
+
+/* What Is Salt Therapy */
+#what-is-salt-therapy {
+  background: var(--cream);
+  padding: clamp(80px, 12vw, 160px) 0;
+}
+#what-is-salt-therapy .benefits-header p { max-width: 640px; }
+#what-is-salt-therapy .benefits-layout { margin-top: 60px; }
+
+/* Salt crystal frame */
+.salt-crystal-frame {
+  aspect-ratio: 1.2;
+  border-radius: var(--radius-lg);
+  background: linear-gradient(160deg, #e8a882 0%, #c47a5a 40%, #a85d3a 100%);
+}
+.salt-crystal-frame svg { width: 75%; height: 75%; }
+
+/* Salt benefit numbers */
+.salt-benefit-num {
+  background: rgba(196,122,90,0.15);
+  color: var(--terracotta);
+}
+
+/* Who Can Benefit */
+#salt-benefits {
+  background: var(--deep);
+  padding: clamp(80px, 12vw, 160px) 0;
+  position: relative;
+  overflow: hidden;
+}
+.salt-curve-top {
+  position: absolute; top: -60px; left: 0; right: 0; height: 120px;
+  background: var(--cream);
+  border-radius: 0 0 50% 50% / 0 0 100px 100px;
+}
+.salt-curve-bottom {
+  position: absolute; bottom: -60px; left: 0; right: 0; height: 120px;
+  background: var(--warm-white);
+  border-radius: 50% 50% 0 0 / 100px 100px 0 0;
+  z-index: 2;
+}
+#salt-benefits .container { position: relative; z-index: 1; }
+
+/* How It Works */
+#how-it-works {
+  background: var(--warm-white);
+  padding: clamp(80px, 12vw, 160px) 0;
+}
+#how-it-works .benefits-eyebrow { display: inline-block; margin-bottom: 12px; }
+#how-it-works .process-header p { color: var(--mid); max-width: 520px; margin: 12px auto 0; }
+
+/* FAQ */
+#faq {
+  background: var(--cream);
+  padding: clamp(80px, 12vw, 160px) 0;
+}
+.faq-list {
+  max-width: 700px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.faq-card { border-radius: var(--radius-sm); }
+.faq-card .testimonial-card::before { display: none; }
+.faq-inner { display: flex; align-items: flex-start; gap: 16px; }
+.faq-inner .benefit-num { flex-shrink: 0; }
+.faq-inner h3 { font-size: 1.1rem; margin-bottom: 8px; }
+.faq-inner p { font-size: 0.9rem; color: var(--mid); font-style: normal; }
+
+/* CTA section */
+#cta.salt-cta { background: var(--warm-white); }
+.salt-cta .cta-eyebrow {
+  display: inline-block;
+  font-size: 0.8rem;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: rgba(232,168,130,0.8);
+  margin-bottom: 16px;
+}
+.salt-cta .btn-outline {
+  color: var(--sage-light);
+  border-color: rgba(232,168,130,0.4);
+}

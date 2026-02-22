@@ -1,0 +1,573 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Reaves Chiropractic Health Centre — Find Your Relief</title>
+	<script>
+	(function(){var d=document.documentElement,t=localStorage.getItem('theme'),dk=t==='dark'||(t!=='light'&&window.matchMedia('(prefers-color-scheme:dark)').matches);if(dk)d.classList.add('dark-mode');var m=document.createElement('meta');m.name='theme-color';m.content=dk?'#0f1520':'#eef2f6';document.head.appendChild(m);})();
+	</script>
+	<link rel="preconnect" href="https://fonts.googleapis.com" />
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+	<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet" />
+	<link rel="icon" type="image/x-icon" href="favicon.ico">
+	<link rel="icon" type="image/png" href="favicon.png">
+	<link rel="apple-touch-icon" href="assets/images/apple-touch-icon.png">
+	<link rel="stylesheet" href="css/default.css" />
+	<link rel="stylesheet" href="css/styles.css" />
+	<link rel="stylesheet" href="css/responsive.css" />
+	<link rel="stylesheet" href="css/dark-mode.css" />
+	</head>
+
+	<body>
+		<!-- ─── NAV ──────────────────────────────────── -->
+		<nav id="nav">
+			<div class="container">
+				<div class="nav-inner">
+					<a href="#" class="nav-logo">
+						<img src="assets/images/Reaves-Chiropractic-Logo.png" alt="Reaves Chiropractic Logo" class="nav-logo-img">
+						<div>Reaves Chiropractic
+						<span>Health Centre</span></div>
+					</a>
+					<div class="nav-links">
+						<a href="#benefits">Benefits</a>
+						<a href="products.html">Products</a>
+						<a href="#process">How It Works</a>
+						<a href="#about">About</a>
+						<a href="salt-therapy.html">Salt Therapy</a>
+						<a href="patient_forms/New_Patient_Forms.zip" download class="btn-outline nav-cta">Download Forms</a>
+					</div>
+					<button class="theme-toggle" onclick="toggleTheme()" aria-label="Toggle dark mode">
+						<svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+						<svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
+					</button>
+					<div class="hamburger" onclick="toggleMenu()">
+						<span></span><span></span><span></span>
+					</div>
+				</div>
+			</div>
+		</nav>
+
+		<!-- ─── MOBILE MENU ───────────────────────────── -->
+		<div id="mobile-menu">
+			<a href="#benefits" onclick="toggleMenu()">Benefits</a>
+			<a href="products.html" onclick="toggleMenu()">Products</a>
+			<a href="#process" onclick="toggleMenu()">How It Works</a>
+			<a href="#testimonials" onclick="toggleMenu()">Reviews</a>
+			<a href="#about" onclick="toggleMenu()">About</a>
+			<a href="salt-therapy.html" onclick="toggleMenu()">Salt Therapy</a>
+			<a href="patient_forms/New_Patient_Forms.zip" download onclick="toggleMenu()">Download Forms</a>
+		</div>
+
+		<!-- ─── HERO ──────────────────────────────────── -->
+		<section id="hero">
+			<div class="hero-blob-1"></div>
+			<div class="hero-blob-2"></div>
+			<div class="container">
+				<div class="hero-grid">
+					<div class="hero-content">
+						<div class="hero-eyebrow reveal">Chiropractic Care That Works</div>
+						<h1 class="hero-title reveal reveal-delay-1">
+							Life Is Too<br>Short to<br><em>Live in Pain</em>
+						</h1>
+						<p class="hero-sub reveal reveal-delay-2">
+							At Reaves Chiropractic Health Centre, we help you move freely, sleep soundly, and feel like yourself again — naturally, without relying on medication.
+						</p>
+						<div class="hero-ctas reveal reveal-delay-3">
+							<a href="#process" class="btn-primary">Start Your Journey</a>
+							<a href="patient_forms/New_Patient_Forms.zip" download class="btn-outline">Download Patient Forms</a>
+						</div>
+						<div class="hero-trust reveal reveal-delay-4">
+							<div class="hero-trust-avatars">
+								<span>😊</span><span>🙋</span><span>👨</span>
+							</div>
+							<div class="hero-trust-text">
+								<strong>40000+ patients helped</strong>
+								Trusted by your community
+							</div>
+						</div>
+					</div>
+					<div class="hero-image-area reveal reveal-delay-2">
+						<div class="hero-circle-bg"></div>
+						<div class="hero-image-frame">
+							<svg class="hero-figure" viewBox="0 0 200 280" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<!-- Simplified human figure SVG -->
+								<ellipse cx="100" cy="50" rx="28" ry="28" fill="rgba(255,255,255,0.9)"/>
+								<rect x="72" y="80" width="56" height="80" rx="28" fill="rgba(255,255,255,0.85)"/>
+								<rect x="40" y="84" width="36" height="18" rx="9" fill="rgba(255,255,255,0.8)" transform="rotate(-15 58 93)"/>
+								<rect x="124" y="84" width="36" height="18" rx="9" fill="rgba(255,255,255,0.8)" transform="rotate(15 142 93)"/>
+								<rect x="75" y="156" width="22" height="70" rx="11" fill="rgba(255,255,255,0.85)"/>
+								<rect x="103" y="156" width="22" height="70" rx="11" fill="rgba(255,255,255,0.85)"/>
+								<!-- Spine highlight -->
+								<line x1="100" y1="82" x2="100" y2="152" stroke="rgba(125,155,118,0.6)" stroke-width="4" stroke-linecap="round" stroke-dasharray="6 4"/>
+							</svg>
+						</div>
+						<div class="hero-stat-card card-1">
+							<div class="star-row">
+								<span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span>
+							</div>
+							<div class="stat-num">5.0</div>
+							<div class="stat-label">Average patient rating</div>
+						</div>
+						<div class="hero-stat-card card-2">
+							<div class="stat-num">93%</div>
+							<div class="stat-label">Report relief within<br>first 3 visits</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- ─── PAIN SECTION ──────────────────────────── -->
+		<section id="pain">
+			<div class="pain-inner container">
+				<div class="pain-header">
+					<h2 class="reveal">We Know How You Feel</h2>
+					<p class="reveal reveal-delay-1">Pain doesn't just hurt your body — it robs you of the life you want to live. Sound familiar?</p>
+				</div>
+				<div class="pain-grid">
+					<div class="pain-card reveal">
+						<div class="pain-icon">😴</div>
+						<h3>Can't Sleep Through the Night</h3>
+						<p>You wake up stiff, sore, and exhausted — wondering if this is just how life is now.</p>
+					</div>
+					<div class="pain-card reveal reveal-delay-1">
+						<div class="pain-icon">🚫</div>
+						<h3>Missing Out on Life's Moments</h3>
+						<p>Playing with your kids, enjoying hobbies, even sitting comfortably — pain is stealing it all.</p>
+					</div>
+					<div class="pain-card reveal reveal-delay-2">
+						<div class="pain-icon">💊</div>
+						<h3>Tired of Temporary Fixes</h3>
+						<p>Painkillers mask the problem. You want real relief that addresses the root cause.</p>
+					</div>
+					<div class="pain-card reveal reveal-delay-3">
+						<div class="pain-icon">📉</div>
+						<h3>Productivity is Suffering</h3>
+						<p>Chronic pain makes it hard to focus, work, and show up as your best self each day.</p>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- ─── BENEFITS ──────────────────────────────── -->
+		<section id="benefits">
+			<div class="container">
+				<div class="benefits-header">
+					<span class="benefits-eyebrow">The Reaves Difference</span>
+					<h2 class="reveal">Your Body Wants to Heal.<br>We Help It Do That.</h2>
+					<p class="reveal reveal-delay-1">Chiropractic care works with your body's natural healing intelligence to restore alignment, reduce pain, and help you thrive.</p>
+				</div>
+				<div class="benefits-layout">
+					<div class="benefits-visual reveal">
+						<div class="benefits-rings">
+							<div class="ring ring-1"><div class="ring-dot"></div></div>
+							<div class="ring ring-2"><div class="ring-dot"></div></div>
+							<div class="ring ring-3"><div class="ring-dot"></div></div>
+							<div class="benefits-center">🌿</div>
+							<div class="orbit-item orbit-item-1">Pain Relief</div>
+							<div class="orbit-item orbit-item-2">Better Sleep</div>
+							<div class="orbit-item orbit-item-3">More Energy</div>
+							<div class="orbit-item orbit-item-4">Flexibility</div>
+						</div>
+					</div>
+					<div class="benefits-list">
+						<div class="benefit-item reveal">
+							<div class="benefit-num">1</div>
+							<div>
+								<h3>Drug-Free Pain Relief</h3>
+								<p>We address the structural causes of your pain rather than masking symptoms, giving you lasting results without medication side effects.</p>
+							</div>
+						</div>
+						<div class="benefit-item reveal reveal-delay-1">
+							<div class="benefit-num">2</div>
+							<div>
+								<h3>Restored Mobility & Flexibility</h3>
+								<p>Proper spinal alignment allows your joints and muscles to move freely again. Feel the difference from your very first adjustment.</p>
+							</div>
+						</div>
+						<div class="benefit-item reveal reveal-delay-2">
+							<div class="benefit-num">3</div>
+							<div>
+								<h3>Better Sleep & More Energy</h3>
+								<p>When your nervous system isn't under constant stress from misalignment, your whole body functions better — including how you sleep and recover.</p>
+							</div>
+						</div>
+						<div class="benefit-item reveal reveal-delay-3">
+							<div class="benefit-num">4</div>
+							<div>
+								<h3>Comprehensive Wellness Support</h3>
+								<p>We carry professional-grade vitamins and supplements to support your healing from the inside out — a whole-body approach to health.</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- ─── PRODUCTS ──────────────────────────────── -->
+		<section id="products">
+			<div class="container">
+				<div class="products-header">
+					<span class="benefits-eyebrow" style="color:var(--terracotta)">In-Office & Available for Order</span>
+					<h2 class="reveal">Professional Supplements<br>for Whole-Body Healing</h2>
+					<p class="reveal reveal-delay-1">We carefully select only the highest-quality vitamins and supplements to complement your chiropractic care. Ask us about what's right for your health goals.</p>
+				</div>
+				<div class="products-grid">
+					<div class="product-card reveal">
+						<div class="product-img" style="background:linear-gradient(145deg,#e8f5e4,#c8dfc5)">🦴</div>
+						<div class="product-body">
+							<span class="product-tag">Joint Support</span>
+							<h3>Bone & Joint Complex</h3>
+							<p>Advanced formula supporting structural integrity and reducing inflammation naturally.</p>
+						</div>
+					</div>
+					<div class="product-card reveal reveal-delay-1">
+						<div class="product-img" style="background:linear-gradient(145deg,#fef3e8,#f5d9b8)">🌟</div>
+						<div class="product-body">
+							<span class="product-tag">Inflammation</span>
+							<h3>Omega-3 Fish Oil</h3>
+							<p>Pharmaceutical-grade omega-3s that actively combat inflammation throughout the body.</p>
+						</div>
+					</div>
+					<div class="product-card reveal reveal-delay-2">
+						<div class="product-img" style="background:linear-gradient(145deg,#e0f0f5,#b8d8e2)">🧊</div>
+						<div class="product-body">
+							<span class="product-tag">Topical Relief</span>
+							<h3>Biofreeze Colorless Gel</h3>
+							<p>Professional-strength colorless menthol gel for fast-acting, cooling pain relief on sore muscles and joints.</p>
+						</div>
+					</div>
+					<div class="product-card reveal reveal-delay-3">
+						<div class="product-img" style="background:linear-gradient(145deg,#e4f2e8,#b8dcc5)">🫐</div>
+						<div class="product-body">
+							<span class="product-tag">Immune Support</span>
+							<h3>Elderberry Gummies</h3>
+							<p>Powerful elderberry extract gummies for immune defense and antioxidant protection.</p>
+						</div>
+					</div>
+				</div>
+				<p style="text-align:center;margin-top:40px;color:var(--mid);font-size:0.9rem;" class="reveal">Ask our team about our full product catalogue — tailored recommendations based on your individual needs.</p>
+			</div>
+		</section>
+
+		<!-- ─── PROCESS ────────────────────────────────── -->
+		<section id="process">
+			<div class="container">
+				<div class="process-header">
+					<span class="benefits-eyebrow" style="display:inline-block;color:var(--sage-dark);margin-bottom:12px;font-size:0.8rem;letter-spacing:0.15em;text-transform:uppercase;">Simple & Straightforward</span>
+					<h2 class="reveal">Your Path to Relief<br>Starts Here</h2>
+					<p class="reveal reveal-delay-1" style="color:var(--mid);max-width:520px;margin:12px auto 0;">Getting started is easier than you think. Here's how your journey to a pain-free life unfolds.</p>
+				</div>
+				<div class="process-steps">
+					<div class="process-step reveal">
+						<div class="step-circle">
+							📋
+							<div class="step-num">1</div>
+						</div>
+						<h3>Download Your Forms</h3>
+						<p>Save time by downloading and completing patient forms before your first visit. No waiting room paperwork.</p>
+					</div>
+					<div class="process-step reveal reveal-delay-1">
+						<div class="step-circle">
+							🩺
+							<div class="step-num">2</div>
+						</div>
+						<h3>Comprehensive Assessment</h3>
+						<p>We listen to your story, examine your spine, and identify the root causes of your pain — not just the symptoms.</p>
+					</div>
+					<div class="process-step reveal reveal-delay-2">
+						<div class="step-circle">
+							🗺️
+							<div class="step-num">3</div>
+						</div>
+						<h3>Personalized Care Plan</h3>
+						<p>You receive a clear, custom treatment plan designed specifically for your body, your pain, and your goals.</p>
+					</div>
+					<div class="process-step reveal reveal-delay-3">
+						<div class="step-circle">
+							✨
+							<div class="step-num">4</div>
+						</div>
+						<h3>Feel the Difference</h3>
+						<p>Regular adjustments, supplement support, and expert guidance bring you back to the life you love living.</p>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- ─── FORMS DOWNLOAD ────────────────────────── -->
+		<section id="forms">
+			<div class="container">
+				<div class="forms-inner">
+					<div class="forms-text reveal">
+						<span style="display:block;font-size:0.8rem;letter-spacing:0.15em;text-transform:uppercase;color:rgba(245,240,232,0.6);margin-bottom:12px;">Save Time on Your First Visit</span>
+						<h2>Download &<br>Arrive Ready</h2>
+						<p>Complete your patient intake forms at home, at your own pace. Bring them with you and we'll get straight to helping you feel better.</p>
+						<a href="#" class="btn-primary" style="background:var(--warm-white);color:var(--sage-dark);" onclick="alert('Forms download would be linked here.')">
+							📥 Download All Forms
+						</a>
+					</div>
+					<div class="forms-cards reveal reveal-delay-1">
+						<a href="patient_forms/New_Patient_Forms.zip" download class="form-card" style="text-decoration:none;color:inherit;">
+							<div class="form-icon">📄</div>
+							<div class="form-info">
+								<h4>New Patient Intake Form</h4>
+								<span>Required for all new patients • PDF</span>
+							</div>
+							<div class="form-dl">↓</div>
+						</a>
+						<div class="form-card" onclick="alert('Health History Form PDF download')">
+							<div class="form-icon">🏥</div>
+							<div class="form-info">
+								<h4>Health History Questionnaire</h4>
+								<span>Medical background & current concerns • PDF</span>
+							</div>
+							<div class="form-dl">↓</div>
+						</div>
+						<div class="form-card" onclick="alert('Consent Form PDF download')">
+							<div class="form-icon">✍️</div>
+							<div class="form-info">
+								<h4>Informed Consent Form</h4>
+								<span>Review and sign before treatment • PDF</span>
+							</div>
+							<div class="form-dl">↓</div>
+						</div>
+						<div class="form-card" onclick="alert('Insurance Form PDF download')">
+							<div class="form-icon">📋</div>
+							<div class="form-info">
+								<h4>Insurance & Billing Authorization</h4>
+								<span>Optional — for insurance claims • PDF</span>
+							</div>
+							<div class="form-dl">↓</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- ─── TESTIMONIALS ──────────────────────────── -->
+		<section id="testimonials">
+			<div class="container">
+				<div class="testimonials-header">
+					<span class="benefits-eyebrow" style="display:inline-block;color:var(--terracotta);font-size:0.8rem;letter-spacing:0.15em;text-transform:uppercase;margin-bottom:12px;">Real Patients. Real Results.</span>
+					<h2 class="reveal">They Found Their Relief.<br><em>You Can Too.</em></h2>
+					<p class="reveal reveal-delay-1" style="color:var(--mid);margin-top:12px;">Don't take our word for it — hear from the patients whose lives have changed.</p>
+				</div>
+				<div class="testimonials-grid">
+					<div class="testimonial-card reveal">
+						<div class="testi-stars"><span>★</span><span>★</span><span>★</span><span>★</span><span>★</span></div>
+						<p class="testi-text">"Dr. Reaves is an awesome guy and wonderful Chiropractor. He will also direct you to who you need to see if there is something beyond Chiropractic care. He saw something in my MRI that other doctors missed, and told me to contact a neurosurgeon. Highly recommend."</p>
+						<div class="testi-author">
+							<div class="testi-avatar">👨</div>
+							<div>
+								<div class="testi-name">Frank R.</div>
+<!--								<div class="testi-since">Patient since 2022</div>-->
+							</div>
+						</div>
+					</div>
+					<div class="testimonial-card reveal reveal-delay-1">
+						<div class="testi-stars"><span>★</span><span>★</span><span>★</span><span>★</span><span>★</span></div>
+						<p class="testi-text">"Dr. Reaves really cares about his patients. He is honest with you about what he can or cannot do to help, and he doesn’t make you visit more often than you need to. I’ve been a patient for more than 2 years, and the treatments/adjustments have helped my back and knee pain very much."</p>
+						<div class="testi-author">
+							<div class="testi-avatar">👩</div>
+							<div>
+								<div class="testi-name">Kristy W.</div>
+<!--								<div class="testi-since">Patient since 2021</div>-->
+							</div>
+						</div>
+					</div>
+					<div class="testimonial-card reveal reveal-delay-2">
+						<div class="testi-stars"><span>★</span><span>★</span><span>★</span><span>★</span><span>★</span></div>
+						<p class="testi-text">"Honest. Sincere and Dr. Ray really wants to get you better."</p>
+						<div class="testi-author">
+							<div class="testi-avatar">👨</div>
+							<div>
+								<div class="testi-name">Chandler W.</div>
+<!--								<div class="testi-since">Patient since 2020</div>-->
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- ─── ABOUT ──────────────────────────────────── -->
+		<section id="about">
+			<div class="container">
+				<div class="about-layout">
+					<div class="about-image-area reveal">
+						<div class="about-frame"><img src="assets/images/dr-reaves.jpg" alt="Dr. Ray H. Reaves" class="about-frame-img"></div>
+						<div class="about-badge">
+							<div class="about-badge-num">70+</div>
+							<div class="about-badge-text">Years of<br>Healing Experience</div>
+						</div>
+					</div>
+					<div class="about-content">
+						<span class="about-eyebrow reveal">About Reaves Chiropractic</span>
+						<h2 class="reveal reveal-delay-1">A Practice Built on<br>Genuine Care</h2>
+						<p class="reveal reveal-delay-2" style="margin-top:16px;">At Reaves Chiropractic Health Centre, we believe that every person deserves to live without pain — and that the body, when properly supported, has a remarkable capacity to heal itself.</p>
+						<p class="reveal reveal-delay-3">Our approach goes beyond adjustments. We look at your whole picture: your posture, your lifestyle, your nutrition, and your goals. Then we create a path forward that's uniquely yours.</p>
+						<div class="about-values reveal reveal-delay-4">
+							<div class="about-value">
+								<h4>Patient-First</h4>
+								<p>Your comfort and progress guide every decision we make.</p>
+							</div>
+							<div class="about-value">
+								<h4>Evidence-Based</h4>
+								<p>Our techniques are grounded in chiropractic science and research.</p>
+							</div>
+							<div class="about-value">
+								<h4>Whole-Body Wellness</h4>
+								<p>We treat the root cause, not just the symptoms you feel.</p>
+							</div>
+							<div class="about-value">
+								<h4>Community-Rooted</h4>
+								<p>Proudly serving our local community for over 70 years.</p>
+							</div>
+						</div>
+						<a href="about-us.html" class="btn-primary reveal reveal-delay-4" style="margin-top:24px;display:inline-block;">More About Us</a>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- ─── FINAL CTA ──────────────────────────────── -->
+		<section id="cta">
+			<div class="cta-blob cta-blob-1"></div>
+			<div class="cta-blob cta-blob-2"></div>
+			<div class="container">
+				<div class="cta-box reveal">
+					<span style="display:inline-block;font-size:0.8rem;letter-spacing:0.15em;text-transform:uppercase;color:rgba(168,196,162,0.8);margin-bottom:16px;">Your Relief is Waiting</span>
+					<h2>Ready to Feel Like<br><em>Yourself Again?</em></h2>
+					<p>Don't let another day go by in unnecessary pain. Download your patient forms, explore our supplement products, and take the first step toward a life of freedom and comfort.</p>
+					<div class="cta-buttons">
+						<a href="patient_forms/New_Patient_Forms.zip" download class="btn-primary" style="background:var(--sage)">📥 Download Patient Forms</a>
+						<a href="products.html" class="btn-outline" style="color:var(--sage-light);border-color:rgba(168,196,162,0.4);">View Our Products</a>
+					</div>
+					<div class="cta-contact">
+						<div class="cta-contact-item">
+							<span>Call Us</span>
+							<a href="tel:+18284642080">(828) 464-2080</a>
+						</div>
+<!--						<div class="cta-divider"></div>-->
+<!--						<div class="cta-contact-item">-->
+<!--							<span>Email Us</span>-->
+<!--							<a href="mailto:info@reaveschiro.com">info@reaveschiro.com</a>-->
+<!--						</div>-->
+						<div class="cta-divider"></div>
+						<div class="cta-contact-item">
+							<span>Location</span>
+							<a href="https://maps.apple.com/?address=630+W+21st+St,+Newton,+NC+28658" class="cta-location-link">630 W 21st, Newton, NC 28658</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- ─── FOOTER ────────────────────────────────── -->
+		<footer>
+			<div class="container">
+				<div class="footer-inner">
+					<div class="footer-brand">
+						<a href="index.html" class="nav-logo">
+							<img src="assets/images/Reaves-Chiropractic-Logo.png" alt="Reaves Chiropractic Logo" class="nav-logo-img">
+							<div>Reaves Chiropractic
+							<span>Health Centre</span></div>
+						</a>
+						<p>Express natural wellness in people with the most effective ways to attain optimum health. Focus on overcoming dis-ease by caring for the sick and suffering with honesty and integrity while caring enough to make necessary sacrifices to positively impact their lives.</p>
+					</div>
+					<div class="footer-col">
+						<h4>Navigate</h4>
+						<ul>
+							<li><a href="#benefits">Benefits</a></li>
+							<li><a href="products.html">Products</a></li>
+							<li><a href="#process">How It Works</a></li>
+							<li><a href="#testimonials">Testimonials</a></li>
+							<li><a href="about-us.html">About</a></li>
+							<li><a href="salt-therapy.html">Salt Therapy</a></li>
+							<li><a href="patient_forms/New_Patient_Forms.zip" download>Download Forms</a></li>
+						</ul>
+					</div>
+					<div class="footer-col">
+						<h4>Contact</h4>
+						<ul>
+							<li><a href="tel:+18284642080">(828) 464-2080 - (Phone)</a></li>
+							<li><a href="tel:">(828) 464-2133 - (Fax)</a></li>
+<!--							<li><a href="mailto:info@reaveschiro.com">info@reaveschiro.com</a></li>-->
+							<li><a href="https://maps.apple.com/?address=630+W+21st+St,+Newton,+NC" class="footer-address">630 W
+								21st St<br />Newton, NC 28658</a></li>
+						</ul>
+					</div>
+					<div class="footer-hours">
+						<h4>Office Hours</h4>
+						<div
+							class="hour-row"><span class="day">Monday</span><span class="time">8:30am – 12pm, 1:30pm -
+							5:30pm</span></div>
+						<div class="hour-row"><span class="day">Tuesday</span><span class="time">Closed</span></div>
+						<div class="hour-row"><span class="day">Wednesday</span><span class="time">8:30am – 12pm, 1:30pm -
+							5:30pm</span></div>
+						<div class="hour-row"><span class="day">Thursday</span><span class="time">8:30am – 12pm, 1:30pm -
+							5:30pm</span></div>
+						<div class="hour-row"><span class="day">Friday</span><span class="time">8:30am – 12pm, 1:30pm -
+							5:30pm</span></div>
+						<div class="hour-row"><span class="day">Saturday</span><span class="time">Closed</span></div>
+						<div class="hour-row"><span class="day">Sunday</span><span class="time">Closed</span></div>
+					</div>
+				</div>
+				<div class="footer-bottom">
+					<p>© 2025 Reaves Chiropractic Health Centre. All rights reserved.</p>
+<!--				<div class="footer-links">
+						<a href="#">Privacy Policy</a>
+						<a href="#">Terms of Service</a>
+						<a href="#">Accessibility</a>
+					</div>-->
+				</div>
+			</div>
+		</footer>
+
+		<!-- ─── SCROLL TO TOP ─────────────────────────── -->
+		<button id="scroll-top" onclick="window.scrollTo({top:0,behavior:'smooth'})">↑</button>
+
+		<script>
+		/* ─── NAV SCROLL ─────────── */
+		const nav = document.getElementById('nav');
+		const scrollTopBtn = document.getElementById('scroll-top');
+		window.addEventListener('scroll', () => {
+			nav.classList.toggle('scrolled', window.scrollY > 40);
+			scrollTopBtn.classList.toggle('visible', window.scrollY > 400);
+		});
+
+		/* ─── MOBILE MENU ─────────── */
+		function toggleMenu() {
+			const menu = document.getElementById('mobile-menu');
+			const hamburger = document.querySelector('.hamburger');
+			const isOpen = menu.classList.toggle('open');
+			hamburger.classList.toggle('active', isOpen);
+			document.body.style.overflow = isOpen ? 'hidden' : '';
+		}
+
+		/* ─── SCROLL REVEAL ─────────── */
+		const reveals = document.querySelectorAll('.reveal');
+		const observer = new IntersectionObserver((entries) => {
+			entries.forEach(entry => {
+				if (entry.isIntersecting) {
+					entry.target.classList.add('visible');
+				}
+			});
+		}, { threshold: 0.1, rootMargin: '0px 0px -40px 0px' });
+		reveals.forEach(el => observer.observe(el));
+
+		/* ─── DARK MODE TOGGLE ─────────── */
+		function toggleTheme() {
+			const d = document.documentElement;
+			d.classList.add('theme-transition');
+			d.classList.toggle('dark-mode');
+			const isDark = d.classList.contains('dark-mode');
+			localStorage.setItem('theme', isDark ? 'dark' : 'light');
+			document.querySelector('meta[name="theme-color"]').content = isDark ? '#0f1520' : '#eef2f6';
+			setTimeout(() => d.classList.remove('theme-transition'), 600);
+		}
+		</script>
+	</body>
+</html>

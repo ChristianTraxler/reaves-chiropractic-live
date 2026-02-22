@@ -1,0 +1,636 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Products — Reaves Chiropractic Health Centre</title>
+	<script>
+	(function(){var d=document.documentElement,t=localStorage.getItem('theme'),dk=t==='dark'||(t!=='light'&&window.matchMedia('(prefers-color-scheme:dark)').matches);if(dk)d.classList.add('dark-mode');var m=document.createElement('meta');m.name='theme-color';m.content=dk?'#0f1520':'#eef2f6';document.head.appendChild(m);})();
+	</script>
+	<link rel="preconnect" href="https://fonts.googleapis.com" />
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+	<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet" />
+	<link rel="icon" type="image/x-icon" href="favicon.ico">
+	<link rel="icon" type="image/png" href="favicon.png">
+	<link rel="apple-touch-icon" href="assets/images/apple-touch-icon.png">
+	<link rel="stylesheet" href="css/default.css" />
+	<link rel="stylesheet" href="css/styles.css" />
+	<link rel="stylesheet" href="css/responsive.css" />
+	<link rel="stylesheet" href="css/products.css" />
+	<link rel="stylesheet" href="css/dark-mode.css" />
+	</head>
+
+	<body>
+		<!-- ─── NAV ──────────────────────────────────── -->
+		<nav id="nav">
+			<div class="container">
+				<div class="nav-inner">
+					<a href="index.html" class="nav-logo">
+						<img src="assets/images/Reaves-Chiropractic-Logo.png" alt="Reaves Chiropractic Logo" class="nav-logo-img">
+						<div>Reaves Chiropractic
+						<span>Health Centre</span></div>
+					</a>
+					<div class="nav-links">
+						<a href="index.html#benefits">Benefits</a>
+						<a href="products.html">Products</a>
+						<a href="index.html#process">How It Works</a>
+						<a href="index.html#about">About</a>
+						<a href="salt-therapy.html">Salt Therapy</a>
+						<a href="patient_forms/New_Patient_Forms.zip" download class="btn-outline nav-cta">Download Forms</a>
+					</div>
+					<button class="theme-toggle" onclick="toggleTheme()" aria-label="Toggle dark mode">
+						<svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+						<svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
+					</button>
+					<div class="hamburger" onclick="toggleMenu()">
+						<span></span><span></span><span></span>
+					</div>
+				</div>
+			</div>
+		</nav>
+
+		<!-- ─── MOBILE MENU ───────────────────────────── -->
+		<div id="mobile-menu">
+			<a href="index.html#benefits" onclick="toggleMenu()">Benefits</a>
+			<a href="products.html" onclick="toggleMenu()">Products</a>
+			<a href="index.html#process" onclick="toggleMenu()">How It Works</a>
+			<a href="index.html#testimonials" onclick="toggleMenu()">Reviews</a>
+			<a href="index.html#about" onclick="toggleMenu()">About</a>
+			<a href="salt-therapy.html" onclick="toggleMenu()">Salt Therapy</a>
+			<a href="patient_forms/New_Patient_Forms.zip" download onclick="toggleMenu()">Download Forms</a>
+		</div>
+
+		<!-- ─── HERO ──────────────────────────────────── -->
+		<section id="hero" class="products-hero">
+			<div class="hero-blob-1"></div>
+			<div class="hero-blob-2"></div>
+			<div class="container">
+				<div class="hero-grid">
+					<div class="hero-content">
+						<div class="hero-eyebrow reveal">Available In-Office</div>
+						<h1 class="hero-title reveal reveal-delay-1">
+							Professional<br>Supplements for<br><em>Whole-Body Healing</em>
+						</h1>
+						<p class="hero-sub reveal reveal-delay-2">
+							We carefully select only the highest-quality vitamins and supplements to complement your chiropractic care. All products are available for pickup at our office.
+						</p>
+						<div class="hero-ctas reveal reveal-delay-3">
+							<a href="#biofreeze" class="btn-primary">Browse Products</a>
+							<a href="tel:+18284642080" class="btn-outline">Call Us</a>
+						</div>
+						<div class="hero-category-btns reveal reveal-delay-4">
+							<a href="#biofreeze" class="btn-category">Biofreeze</a>
+							<a href="#gummies" class="btn-category">Gummies</a>
+							<a href="#vitamins" class="btn-category">Vitamins</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- ─── SECTION 1: BIOFREEZE (3 cards) ────────── -->
+		<section id="biofreeze" class="products-section">
+			<div class="container">
+				<div class="products-section-header">
+					<span class="benefits-eyebrow" style="color:var(--terracotta)">Professional-Strength Pain Relief</span>
+					<h2 class="reveal">Biofreeze</h2>
+					<p class="reveal reveal-delay-1">Trusted by chiropractors and physical therapists worldwide. Biofreeze delivers fast-acting, cooling pain relief exactly where you need it.</p>
+				</div>
+				<div class="products-page-grid">
+
+					<div class="products-page-card reveal">
+						<div class="product-placeholder-img" style="background:linear-gradient(145deg,#e0f0f5,#b8d8e2)">
+							<img src="assets/images/products/biofreeze-gel.png" alt="Biofreeze Colorless Gel">
+						</div>
+						<div class="product-body">
+							<span class="product-tag">Topical Relief</span>
+							<h3>Biofreeze Colorless Gel</h3>
+							<p>Biofreeze menthol pain relieving Colorless Gel is well-suited for application on small and large muscles
+								areas. Fast acting and long lasting, cooling menthol formula is dye free and delivers penetrating pain
+								relief for sore muscles and joints, simple backaches, arthritis, strains, bruises and sprains.</p>
+							<!-- <a href="#" class="product-learn-more">Learn More</a> -->
+						</div>
+					</div>
+
+					<div class="products-page-card reveal reveal-delay-1">
+						<div class="product-placeholder-img" style="background:linear-gradient(145deg,#e0f0f5,#b8d8e2)">
+							<img src="assets/images/products/biofreezespray.png" alt="Biofreeze Continuous Spray">
+						</div>
+						<div class="product-body">
+							<span class="product-tag">Topical Relief</span>
+							<h3>Biofreeze Continuous Spray</h3>
+							<p>Biofreeze menthol pain relieving 360° aerosol Spray features a continuous flow, even when upside-down,
+								making it easy to apply to hard-to-reach areas such as the middle of back, neck and lower extremities.
+								Fast acting, cooling menthol formula delivers penetrating pain relief that lasts.</p>
+							<!-- <a href="#" class="product-learn-more">Learn More</a> -->
+						</div>
+					</div>
+
+					<div class="products-page-card reveal reveal-delay-2">
+						<div class="product-placeholder-img" style="background:linear-gradient(145deg,#e0f0f5,#b8d8e2)">
+							<img src="assets/images/products/colorless-roll-on.png" alt="Biofreeze Colorless Roll-On">
+						</div>
+						<div class="product-body">
+							<span class="product-tag">Topical Relief</span>
+							<h3>Biofreeze Colorless Roll-On</h3>
+							<p>Biofreeze 2.5 fl oz roll-on offers hands-free application via roller ball and is TSA friendly,
+								making it suitable for travel. Fast acting and long lasting, cooling menthol formulation delivers penetrating
+								pain relief for sore muscles and joints, simple backaches, arthritis, strains, bruises and sprains.</p>
+							<!-- <a href="#" class="product-learn-more">Learn More</a> -->
+						</div>
+					</div>
+
+				</div>
+			</div>
+		</section>
+
+		<!-- ─── SECTION 2: GUMMIES (9 cards) ─────────── -->
+		<section id="gummies" class="products-section">
+			<div class="container">
+				<div class="products-section-header">
+					<span class="benefits-eyebrow" style="color:var(--terracotta)">Great-Tasting Wellness</span>
+					<h2 class="reveal">Gummies</h2>
+					<p class="reveal reveal-delay-1">Professional-grade supplements in a delicious, easy-to-take gummy form. Perfect for those who prefer not to swallow capsules.</p>
+				</div>
+				<div class="products-page-grid">
+
+					<div class="products-page-card reveal">
+						<div class="product-placeholder-img" style="background:linear-gradient(145deg,#e4f2e8,#b8dcc5)">
+							<img src="assets/images/products/Elderberry.png" alt="Elderberry Gummies">
+						</div>
+						<div class="product-body">
+							<span class="product-tag">Immune Support</span>
+							<h3>Elderberry</h3>
+							<p>Powerful elderberry extract gummies for immune defense and antioxidant protection.</p>
+							<!-- <a href="#" class="product-learn-more">Learn More</a> -->
+						</div>
+					</div>
+
+					<div class="products-page-card reveal reveal-delay-1">
+						<div class="product-placeholder-img" style="background:linear-gradient(145deg,#e8eef5,#c0d0e8)">
+							<img src="assets/images/products/B12.png" alt="B12 Energy Gummies">
+						</div>
+						<div class="product-body">
+							<span class="product-tag">Energy</span>
+							<h3>B12 Energy</h3>
+							<p>Energy-boosting vitamin B-12 gummies for focus, vitality, and nervous system support.</p>
+							<!-- <a href="#" class="product-learn-more">Learn More</a> -->
+						</div>
+					</div>
+
+					<div class="products-page-card reveal reveal-delay-2">
+						<div class="product-placeholder-img" style="background:linear-gradient(145deg,#fff0e8,#eed5bb)">
+							<img src="assets/images/products/Turmeric.png" alt="Turmeric Inflammation Response Gummies">
+						</div>
+						<div class="product-body">
+							<span class="product-tag">Anti-Inflammatory</span>
+							<h3>Turmeric Inflammation Response</h3>
+							<p>Turmeric gummies for powerful anti-inflammatory support and joint comfort.</p>
+							<!-- <a href="#" class="product-learn-more">Learn More</a> -->
+						</div>
+					</div>
+
+					<div class="products-page-card reveal reveal-delay-3">
+						<div class="product-placeholder-img" style="background:linear-gradient(145deg,#f0e8f5,#d5c0e8)">
+							<img src="assets/images/products/Melatonin.png" alt="Melatonin Gummies">
+						</div>
+						<div class="product-body">
+							<span class="product-tag">Sleep Support</span>
+							<h3>Melatonin</h3>
+							<p>Natural sleep support gummies that promote restful nights without morning grogginess.</p>
+							<!-- <a href="#" class="product-learn-more">Learn More</a> -->
+						</div>
+					</div>
+
+					<div class="products-page-card reveal">
+						<div class="product-placeholder-img" style="background:linear-gradient(145deg,#fff0e8,#eed5bb)">
+							<img src="assets/images/products/D3.png" alt="D3 1000 IU Gummies">
+						</div>
+						<div class="product-body">
+							<span class="product-tag">Bone Health</span>
+							<h3>D3 1000 IU</h3>
+							<p>Delicious vitamin D3 gummies for bone strength, mood support, and immune function.</p>
+							<!-- <a href="#" class="product-learn-more">Learn More</a> -->
+						</div>
+					</div>
+
+					<div class="products-page-card reveal reveal-delay-1">
+						<div class="product-placeholder-img" style="background:linear-gradient(145deg,#fef3e8,#f5d9b8)">
+							<img src="assets/images/products/C-Defense.png" alt="C Defense Gummies">
+						</div>
+						<div class="product-body">
+							<span class="product-tag">Immune Health</span>
+							<h3>C Defense</h3>
+							<p>Vitamin C gummies for daily immune defense and antioxidant protection.</p>
+							<!-- <a href="#" class="product-learn-more">Learn More</a> -->
+						</div>
+					</div>
+
+					<div class="products-page-card reveal reveal-delay-2">
+						<div class="product-placeholder-img" style="background:linear-gradient(145deg,#e8f5e4,#c8dfc5)">
+							<img src="assets/images/products/Kids.png" alt="Kids Multivitamin Gummies">
+						</div>
+						<div class="product-body">
+							<span class="product-tag">Children's Health</span>
+							<h3>Kids Multivitamin</h3>
+							<p>Complete daily multivitamin gummies formulated for growing children's nutritional needs.</p>
+							<!-- <a href="#" class="product-learn-more">Learn More</a> -->
+						</div>
+					</div>
+
+					<div class="products-page-card reveal reveal-delay-3">
+						<div class="product-placeholder-img" style="background:linear-gradient(145deg,#f5e4f0,#e8b8d5)">
+							<img src="assets/images/products/Women.png" alt="Women's Multivitamin Gummies">
+						</div>
+						<div class="product-body">
+							<span class="product-tag">Women's Health</span>
+							<h3>Women's Multivitamin</h3>
+							<p>Comprehensive daily multivitamin gummies formulated for women's unique nutritional needs.</p>
+							<!-- <a href="#" class="product-learn-more">Learn More</a> -->
+						</div>
+					</div>
+
+					<div class="products-page-card reveal">
+						<div class="product-placeholder-img" style="background:linear-gradient(145deg,#e4e8f5,#b8c0e8)">
+							<img src="assets/images/products/Men.png" alt="Men's Multivitamin Gummies">
+						</div>
+						<div class="product-body">
+							<span class="product-tag">Men's Health</span>
+							<h3>Men's Multivitamin</h3>
+							<p>Daily multivitamin gummies designed for men's health, energy, and performance support.</p>
+							<!-- <a href="#" class="product-learn-more">Learn More</a> -->
+						</div>
+					</div>
+
+				</div>
+			</div>
+		</section>
+
+		<!-- ─── SECTION 3: VITAMINS (16 cards) ───────── -->
+		<section id="vitamins" class="products-section">
+			<div class="container">
+				<div class="products-section-header">
+					<span class="benefits-eyebrow" style="color:var(--terracotta)">Professional-Grade Supplements</span>
+					<h2 class="reveal">Vitamins</h2>
+					<p class="reveal reveal-delay-1">Carefully selected, high-quality vitamins and supplements to support your chiropractic care and overall wellness goals.</p>
+				</div>
+				<div class="products-page-grid">
+
+					<div class="products-page-card reveal">
+						<div class="product-placeholder-img" style="background:linear-gradient(145deg,#e8f5f0,#b8d9cc)">
+							<img src="assets/images/products/Acute-Defense.png" alt="Acute Defense">
+						</div>
+						<div class="product-body">
+							<span class="product-tag">Immune Health</span>
+							<h3>Acute Defense</h3>
+							<p>Fast-acting immune support formula to help your body respond to seasonal challenges.</p>
+							<!-- <a href="#" class="product-learn-more">Learn More</a> -->
+						</div>
+					</div>
+
+					<div class="products-page-card reveal reveal-delay-1">
+						<div class="product-placeholder-img" style="background:linear-gradient(145deg,#f0e8f5,#d5c0e8)">
+							<img src="assets/images/products/B-Complex.png" alt="B Complex">
+						</div>
+						<div class="product-body">
+							<span class="product-tag">Energy &amp; Brain Health</span>
+							<h3>B Complex</h3>
+							<p>Complete B-vitamin formula for energy production, brain function, and nerve health.</p>
+							<!-- <a href="#" class="product-learn-more">Learn More</a> -->
+						</div>
+					</div>
+
+					<div class="products-page-card reveal reveal-delay-2">
+						<div class="product-placeholder-img" style="background:linear-gradient(145deg,#e8f5e4,#c8dfc5)">
+							<img src="assets/images/products/Bio-Flex.png" alt="Bio-Flex II">
+						</div>
+						<div class="product-body">
+							<span class="product-tag">Joint Support</span>
+							<h3>Bio-Flex II</h3>
+							<p>Advanced joint flexibility formula supporting cartilage health and comfortable movement.</p>
+							<!-- <a href="#" class="product-learn-more">Learn More</a> -->
+						</div>
+					</div>
+
+					<div class="products-page-card reveal reveal-delay-3">
+						<div class="product-placeholder-img" style="background:linear-gradient(145deg,#f5f0e8,#ddd5c0)">
+							<img src="assets/images/products/Bone-Health.png" alt="Bone Health">
+						</div>
+						<div class="product-body">
+							<span class="product-tag">Bone Density</span>
+							<h3>Bone Health</h3>
+							<p>Comprehensive bone support formula for maintaining strong bones and structural integrity.</p>
+							<!-- <a href="#" class="product-learn-more">Learn More</a> -->
+						</div>
+					</div>
+
+					<div class="products-page-card reveal">
+						<div class="product-placeholder-img" style="background:linear-gradient(145deg,#e8f0fe,#c5d0ec)">
+							<img src="assets/images/products/Calcium-Magnesium.png" alt="Calcium &amp; Magnesium">
+						</div>
+						<div class="product-body">
+							<span class="product-tag">Bone &amp; Muscle</span>
+							<h3>Calcium &amp; Magnesium</h3>
+							<p>Balanced mineral formula for bone density, muscle function, and nerve transmission.</p>
+							<!-- <a href="#" class="product-learn-more">Learn More</a> -->
+						</div>
+					</div>
+
+					<div class="products-page-card reveal reveal-delay-1">
+						<div class="product-placeholder-img" style="background:linear-gradient(145deg,#f5e8e8,#e8c5c0)">
+							<img src="assets/images/products/cardio-ease.png" alt="Cardio-Ease BP">
+						</div>
+						<div class="product-body">
+							<span class="product-tag">Heart Health</span>
+							<h3>Cardio-Ease BP</h3>
+							<p>Cardiovascular support formula for healthy blood pressure and heart function.</p>
+							<!-- <a href="#" class="product-learn-more">Learn More</a> -->
+						</div>
+					</div>
+
+					<div class="products-page-card reveal reveal-delay-2">
+						<div class="product-placeholder-img" style="background:linear-gradient(145deg,#fef3e8,#f5d9b8)">
+							<img src="assets/images/products/Cholesterol-Complete.png" alt="Cholesterol Complete">
+						</div>
+						<div class="product-body">
+							<span class="product-tag">Heart Health</span>
+							<h3>Cholesterol Complete</h3>
+							<p>Comprehensive formula for maintaining healthy cholesterol levels and cardiovascular wellness.</p>
+							<!-- <a href="#" class="product-learn-more">Learn More</a> -->
+						</div>
+					</div>
+
+					<div class="products-page-card reveal reveal-delay-3">
+						<div class="product-placeholder-img" style="background:linear-gradient(145deg,#fff0e8,#eed5bb)">
+							<img src="assets/images/products/CoQ10.png" alt="CoQ10 100 mg">
+						</div>
+						<div class="product-body">
+							<span class="product-tag">Cellular Energy</span>
+							<h3>CoQ10 100 mg</h3>
+							<p>Essential coenzyme for heart health, cellular energy production, and antioxidant protection.</p>
+							<!-- <a href="#" class="product-learn-more">Learn More</a> -->
+						</div>
+					</div>
+
+					<div class="products-page-card reveal">
+						<div class="product-placeholder-img" style="background:linear-gradient(145deg,#e4f2e8,#b8dcc5)">
+							<img src="assets/images/products/Inflam-95.png" alt="Inflam-95">
+						</div>
+						<div class="product-body">
+							<span class="product-tag">Anti-Inflammatory</span>
+							<h3>Inflam-95</h3>
+							<p>Powerful anti-inflammatory supplement for reducing pain and supporting recovery.</p>
+							<!-- <a href="#" class="product-learn-more">Learn More</a> -->
+						</div>
+					</div>
+
+					<div class="products-page-card reveal reveal-delay-1">
+						<div class="product-placeholder-img" style="background:linear-gradient(145deg,#e8f5f0,#b8d9cc)">
+							<img src="assets/images/products/Omega-3.png" alt="Omega-3 1000">
+						</div>
+						<div class="product-body">
+							<span class="product-tag">Inflammation</span>
+							<h3>Omega-3 1000</h3>
+							<p>Pharmaceutical-grade omega-3 fish oil that actively combats inflammation throughout the body.</p>
+							<!-- <a href="#" class="product-learn-more">Learn More</a> -->
+						</div>
+					</div>
+
+					<div class="products-page-card reveal reveal-delay-2">
+						<div class="product-placeholder-img" style="background:linear-gradient(145deg,#e8eef5,#c0d0e8)">
+							<img src="assets/images/products/One-Daily.png" alt="One Daily">
+						</div>
+						<div class="product-body">
+							<span class="product-tag">Daily Wellness</span>
+							<h3>One Daily</h3>
+							<p>Convenient once-daily multivitamin covering your essential nutritional needs.</p>
+							<!-- <a href="#" class="product-learn-more">Learn More</a> -->
+						</div>
+					</div>
+
+					<div class="products-page-card reveal reveal-delay-3">
+						<div class="product-placeholder-img" style="background:linear-gradient(145deg,#f5f0e4,#e8dcc0)">
+							<img src="assets/images/products/Probiotic.png" alt="Probiotic">
+						</div>
+						<div class="product-body">
+							<span class="product-tag">Gut Health</span>
+							<h3>Probiotic</h3>
+							<p>Multi-strain probiotic for digestive balance, immune support, and gut integrity.</p>
+							<!-- <a href="#" class="product-learn-more">Learn More</a> -->
+						</div>
+					</div>
+
+					<div class="products-page-card reveal">
+						<div class="product-placeholder-img" style="background:linear-gradient(145deg,#e4e8f5,#b8c0e8)">
+							<img src="assets/images/products/Prostate.png" alt="Prostate Strength">
+						</div>
+						<div class="product-body">
+							<span class="product-tag">Men's Health</span>
+							<h3>Prostate Strength</h3>
+							<p>Targeted formula supporting prostate health and urinary function for men.</p>
+							<!-- <a href="#" class="product-learn-more">Learn More</a> -->
+						</div>
+					</div>
+
+					<div class="products-page-card reveal reveal-delay-1">
+						<div class="product-placeholder-img" style="background:linear-gradient(145deg,#fff0e8,#eed5bb)">
+							<img src="assets/images/products/Turmeric-Response.png" alt="Turmeric Response Joint">
+						</div>
+						<div class="product-body">
+							<span class="product-tag">Joint Support</span>
+							<h3>Turmeric Response Joint</h3>
+							<p>Turmeric-based formula specifically designed for joint comfort and mobility support.</p>
+							<!-- <a href="#" class="product-learn-more">Learn More</a> -->
+						</div>
+					</div>
+
+					<div class="products-page-card reveal reveal-delay-2">
+						<div class="product-placeholder-img" style="background:linear-gradient(145deg,#f2e8f5,#d0b8e8)">
+							<img src="assets/images/products/vision-plex.png" alt="Vision-Plex">
+						</div>
+						<div class="product-body">
+							<span class="product-tag">Eye Health</span>
+							<h3>Vision-Plex</h3>
+							<p>Comprehensive eye health formula supporting vision clarity and long-term eye wellness.</p>
+							<!-- <a href="#" class="product-learn-more">Learn More</a> -->
+						</div>
+					</div>
+
+					<div class="products-page-card reveal reveal-delay-3">
+						<div class="product-placeholder-img" style="background:linear-gradient(145deg,#fff0e8,#eed5bb)">
+							<img src="assets/images/products/vitamins/91150.png" alt="Vitamin D3 2000 IU">
+						</div>
+						<div class="product-body">
+							<span class="product-tag">Bone &amp; Immune</span>
+							<h3>Vitamin D3 2000 IU</h3>
+							<p>High-potency vitamin D3 for bone strength, immune function, and overall wellness.</p>
+							<!-- <a href="#" class="product-learn-more">Learn More</a> -->
+						</div>
+					</div>
+
+				</div>
+<!--				<p style="text-align:center;margin-top:50px;color:var(&#45;&#45;mid);font-size:0.95rem;" class="reveal">Don't see what you're looking for? Call us at <a href="tel:+18284642080" style="color:var(&#45;&#45;sage-dark);font-weight:500;">(828) 464-2080</a> — we're happy to help with tailored recommendations.</p>-->
+			</div>
+		</section>
+
+		<!-- ─── FINAL CTA ──────────────────────────────── -->
+		<section id="cta">
+			<div class="cta-blob cta-blob-1"></div>
+			<div class="cta-blob cta-blob-2"></div>
+			<div class="container">
+				<div class="cta-box reveal">
+					<span style="display:inline-block;font-size:0.8rem;letter-spacing:0.15em;text-transform:uppercase;color:rgba(168,196,162,0.8);margin-bottom:16px;">Your Relief is Waiting</span>
+					<h2>Ready to Feel Like<br><em>Yourself Again?</em></h2>
+					<p>Don't let another day go by in unnecessary pain. Download your patient forms, explore our supplement products, and take the first step toward a life of freedom and comfort.</p>
+					<div class="cta-buttons">
+						<a href="patient_forms/New_Patient_Forms.zip" download class="btn-primary" style="background:var(--sage)">📥 Download Patient Forms</a>
+						<a href="index.html" class="btn-outline" style="color:var(--sage-light);border-color:rgba(168,196,162,0.4);">Back to Home</a>
+					</div>
+					<div class="cta-contact">
+						<div class="cta-contact-item">
+							<span>Call Us</span>
+							<a href="tel:+18284642080">(828) 464-2080</a>
+						</div>
+						<div class="cta-divider"></div>
+						<div class="cta-contact-item">
+							<span>Location</span>
+							<a href="https://maps.apple.com/?address=630+W+21st+St,+Newton,+NC+28658" class="cta-location-link">630 W 21st, Newton, NC 28658</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- ─── FOOTER ────────────────────────────────── -->
+		<footer>
+			<div class="container">
+				<div class="footer-inner">
+					<div class="footer-brand">
+						<a href="index.html" class="nav-logo">
+							<img src="assets/images/Reaves-Chiropractic-Logo.png" alt="Reaves Chiropractic Logo" class="nav-logo-img">
+							<div>Reaves Chiropractic
+							<span>Health Centre</span></div>
+						</a>
+						<p>Express natural wellness in people with the most effective ways to attain optimum health. Focus on overcoming dis-ease by caring for the sick and suffering with honesty and integrity while caring enough to make necessary sacrifices to positively impact their lives.</p>
+					</div>
+					<div class="footer-col">
+						<h4>Navigate</h4>
+						<ul>
+							<li><a href="index.html#benefits">Benefits</a></li>
+							<li><a href="products.html">Products</a></li>
+							<li><a href="index.html#process">How It Works</a></li>
+							<li><a href="index.html#testimonials">Testimonials</a></li>
+							<li><a href="index.html#about">About</a></li>
+							<li><a href="salt-therapy.html">Salt Therapy</a></li>
+							<li><a href="patient_forms/New_Patient_Forms.zip" download>Download Forms</a></li>
+						</ul>
+					</div>
+					<div class="footer-col">
+						<h4>Contact</h4>
+						<ul>
+							<li><a href="tel:+18284642080">(828) 464-2080 - (Phone)</a></li>
+							<li><a href="tel:">(828) 464-2133 - (Fax)</a></li>
+							<li><a href="https://maps.apple.com/?address=630+W+21st+St,+Newton,+NC" class="footer-address">630 W
+								21st St<br />Newton, NC 28658</a></li>
+						</ul>
+					</div>
+					<div class="footer-hours">
+						<h4>Office Hours</h4>
+						<div class="hour-row"><span class="day">Monday</span><span class="time">8:30am – 12pm, 1:30pm - 5:30pm</span></div>
+						<div class="hour-row"><span class="day">Tuesday</span><span class="time">Closed</span></div>
+						<div class="hour-row"><span class="day">Wednesday</span><span class="time">8:30am – 12pm, 1:30pm - 5:30pm</span></div>
+						<div class="hour-row"><span class="day">Thursday</span><span class="time">8:30am – 12pm, 1:30pm - 5:30pm</span></div>
+						<div class="hour-row"><span class="day">Friday</span><span class="time">8:30am – 12pm, 1:30pm - 5:30pm</span></div>
+						<div class="hour-row"><span class="day">Saturday</span><span class="time">Closed</span></div>
+						<div class="hour-row"><span class="day">Sunday</span><span class="time">Closed</span></div>
+					</div>
+				</div>
+				<div class="footer-bottom">
+					<p>&copy; 2025 Reaves Chiropractic Health Centre. All rights reserved.</p>
+<!--				<div class="footer-links">
+						<a href="#">Privacy Policy</a>
+						<a href="#">Terms of Service</a>
+						<a href="#">Accessibility</a>
+					</div>-->
+				</div>
+			</div>
+		</footer>
+
+		<!-- ─── IMAGE LIGHTBOX ────────────────────────── -->
+		<div id="product-lightbox">
+			<img id="lightbox-img" src="" alt="">
+		</div>
+
+		<!-- ─── SCROLL TO TOP ─────────────────────────── -->
+		<button id="scroll-top" onclick="window.scrollTo({top:0,behavior:'smooth'})">&#8593;</button>
+
+		<script>
+		/* ─── NAV SCROLL ─────────── */
+		const nav = document.getElementById('nav');
+		const scrollTopBtn = document.getElementById('scroll-top');
+		window.addEventListener('scroll', () => {
+			nav.classList.toggle('scrolled', window.scrollY > 40);
+			scrollTopBtn.classList.toggle('visible', window.scrollY > 400);
+		});
+
+		/* ─── MOBILE MENU ─────────── */
+		function toggleMenu() {
+			const menu = document.getElementById('mobile-menu');
+			const hamburger = document.querySelector('.hamburger');
+			const isOpen = menu.classList.toggle('open');
+			hamburger.classList.toggle('active', isOpen);
+			document.body.style.overflow = isOpen ? 'hidden' : '';
+		}
+
+		/* ─── SCROLL REVEAL ─────────── */
+		const reveals = document.querySelectorAll('.reveal');
+		const observer = new IntersectionObserver((entries) => {
+			entries.forEach(entry => {
+				if (entry.isIntersecting) {
+					entry.target.classList.add('visible');
+				}
+			});
+		}, { threshold: 0.1, rootMargin: '0px 0px -40px 0px' });
+		reveals.forEach(el => observer.observe(el));
+
+		/* ─── DARK MODE TOGGLE ─────────── */
+		function toggleTheme() {
+			const d = document.documentElement;
+			d.classList.add('theme-transition');
+			d.classList.toggle('dark-mode');
+			const isDark = d.classList.contains('dark-mode');
+			localStorage.setItem('theme', isDark ? 'dark' : 'light');
+			document.querySelector('meta[name="theme-color"]').content = isDark ? '#0f1520' : '#eef2f6';
+			setTimeout(() => d.classList.remove('theme-transition'), 600);
+		}
+
+		/* ─── PRODUCT IMAGE LIGHTBOX ── */
+		const lightbox = document.getElementById('product-lightbox');
+		const lightboxImg = document.getElementById('lightbox-img');
+
+		document.querySelectorAll('.product-placeholder-img').forEach(area => {
+			area.style.cursor = 'pointer';
+			area.addEventListener('click', () => {
+				const img = area.querySelector('img');
+				if (!img) return;
+				lightboxImg.src = img.src;
+				lightboxImg.alt = img.alt;
+				lightbox.classList.add('active');
+				document.body.style.overflow = 'hidden';
+			});
+		});
+
+		lightbox.addEventListener('click', () => {
+			lightbox.classList.remove('active');
+			document.body.style.overflow = '';
+		});
+
+		document.addEventListener('keydown', (e) => {
+			if (e.key === 'Escape' && lightbox.classList.contains('active')) {
+				lightbox.classList.remove('active');
+				document.body.style.overflow = '';
+			}
+		});
+		</script>
+	</body>
+</html>

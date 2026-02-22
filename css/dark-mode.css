@@ -1,0 +1,399 @@
+/* ───────────────────────────────────────────── */
+/*  DARK MODE                                    */
+/* ───────────────────────────────────────────── */
+
+/* ─── Smooth Transition ───────────────────── */
+/* Only enable after page load (JS adds this class) to prevent flash */
+html.theme-transition,
+html.theme-transition *,
+html.theme-transition *::before,
+html.theme-transition *::after {
+  transition: background 0.4s ease, background-color 0.4s ease, border-color 0.4s ease, box-shadow 0.4s ease, fill 0.4s ease, stroke 0.4s ease, filter 0.4s ease !important;
+}
+
+/* ─── Variable Overrides ──────────────────── */
+html.dark-mode {
+  --cream: #0f1520;
+  --warm-white: #151d2a;
+  --sage: #9a6aaa;
+  --sage-light: #b888c8;
+  --sage-dark: #c8a0d5;
+  --terracotta: #d4926e;
+  --terracotta-light: #e8a882;
+  --bark: #8a9ab2;
+  --sand: #4a5a6a;
+  --deep: #e0e6ec;
+  --mid: #9aaabb;
+  --white: #e0e6ec;
+  --nav-bg: rgba(15,21,32,0.95);
+  --terracotta-dark: #c88060;
+  --avatar-1: #1e3545;
+  --avatar-2: #3a3028;
+  --avatar-3: #253040;
+  --shadow-soft: 0 8px 40px rgba(0,0,0,0.2);
+  --shadow-med: 0 16px 60px rgba(0,0,0,0.3);
+}
+
+/* ─── Body & General ──────────────────────── */
+html.dark-mode body {
+  color-scheme: dark;
+}
+
+html.dark-mode img {
+  opacity: 0.92;
+}
+
+/* ─── Nav ─────────────────────────────────── */
+html.dark-mode #nav.scrolled {
+  box-shadow: 0 2px 20px rgba(0,0,0,0.3);
+}
+
+html.dark-mode .hamburger span {
+  background: var(--deep);
+}
+
+html.dark-mode #mobile-menu {
+  background: var(--warm-white);
+}
+
+/* ─── Hero ────────────────────────────────── */
+html.dark-mode .hero-blob-1 {
+  background: radial-gradient(circle at 40% 40%, rgba(131,85,146,0.12) 0%, rgba(131,85,146,0.03) 60%, transparent 80%);
+}
+html.dark-mode .hero-blob-2 {
+  background: radial-gradient(circle at 60% 60%, rgba(212,146,110,0.08) 0%, transparent 70%);
+}
+
+html.dark-mode .hero-circle-bg {
+  background: radial-gradient(circle, rgba(131,85,146,0.1) 0%, rgba(131,85,146,0.02) 70%, transparent 100%);
+}
+
+html.dark-mode .hero-image-frame {
+  background: linear-gradient(160deg, #2e1e35 0%, #302038 30%, #25182e 100%);
+}
+
+html.dark-mode .hero-eyebrow {
+  background: rgba(131,85,146,0.1);
+}
+
+/* ─── Pain Section ────────────────────────── */
+html.dark-mode #pain {
+  background: #080d18;
+}
+html.dark-mode #pain::before {
+  background: var(--warm-white);
+}
+html.dark-mode #pain::after {
+  background: var(--cream);
+}
+
+html.dark-mode .pain-header h2 { color: #e0e6ec; }
+html.dark-mode .pain-header p { color: #9aaabb; }
+html.dark-mode .pain-card h3 { color: #e0e6ec; }
+html.dark-mode .pain-card p { color: rgba(154,170,187,0.8); }
+
+html.dark-mode .pain-card {
+  background: rgba(255,255,255,0.03);
+  border-color: rgba(255,255,255,0.06);
+}
+html.dark-mode .pain-card:hover {
+  background: rgba(255,255,255,0.06);
+}
+
+html.dark-mode .pain-icon {
+  background: rgba(131,85,146,0.12);
+}
+
+/* ─── Benefits ────────────────────────────── */
+html.dark-mode .ring {
+  border-color: rgba(131,85,146,0.35);
+}
+
+html.dark-mode .benefit-num {
+  background: rgba(131,85,146,0.08);
+}
+
+/* ─── Products ────────────────────────────── */
+html.dark-mode .product-card {
+  border: 1px solid rgba(255,255,255,0.15);
+}
+
+html.dark-mode .product-tag {
+  background: rgba(131,85,146,0.08);
+}
+
+html.dark-mode .product-img::after {
+  background: radial-gradient(circle at 50% 100%, rgba(0,0,0,0.15) 0%, transparent 70%);
+}
+
+/* ─── Process ─────────────────────────────── */
+html.dark-mode .step-circle {
+  border-color: var(--sand);
+}
+
+html.dark-mode .process-steps::before {
+  background: linear-gradient(90deg, transparent, rgba(131,85,146,0.15), rgba(131,85,146,0.15), transparent);
+}
+
+/* ─── Forms ───────────────────────────────── */
+html.dark-mode #forms {
+  background: var(--sage);
+}
+html.dark-mode #forms::before {
+  background: var(--cream);
+}
+
+html.dark-mode .form-card {
+  background: rgba(255,255,255,0.1);
+  border-color: rgba(255,255,255,0.18);
+}
+html.dark-mode .form-card:hover {
+  background: rgba(255,255,255,0.18);
+}
+
+/* ─── Testimonials ────────────────────────── */
+html.dark-mode .testimonial-card {
+  border: 1px solid rgba(255,255,255,0.15);
+}
+
+html.dark-mode .testimonial-card::before {
+  color: rgba(131,85,146,0.08);
+}
+
+/* ─── About ───────────────────────────────── */
+html.dark-mode .about-frame {
+  background: linear-gradient(160deg, #2e1e35 0%, #302038 50%, #25182e 100%);
+}
+
+html.dark-mode .about-value {
+  border-left-color: rgba(131,85,146,0.2);
+}
+
+/* ─── CTA ─────────────────────────────────── */
+html.dark-mode .cta-blob-1 {
+  background: radial-gradient(circle, rgba(131,85,146,0.06) 0%, transparent 70%);
+}
+html.dark-mode .cta-blob-2 {
+  background: radial-gradient(circle, rgba(212,146,110,0.05) 0%, transparent 70%);
+}
+html.dark-mode .cta-box {
+  background: #080d18;
+  border: 1px solid rgba(255,255,255,0.15);
+}
+html.dark-mode .cta-box h2 { color: #e0e6ec; }
+html.dark-mode .cta-box p { color: #9aaabb; }
+html.dark-mode .cta-contact-item span { color: rgba(154,170,187,0.6); }
+html.dark-mode .cta-contact-item a { color: #e0e6ec; }
+html.dark-mode .cta-box::before {
+  background: radial-gradient(ellipse at 50% 0%, rgba(131,85,146,0.08) 0%, transparent 60%);
+}
+
+/* ─── Footer ──────────────────────────────── */
+html.dark-mode footer {
+  background: #080d18;
+}
+html.dark-mode footer::before {
+  background: var(--warm-white);
+}
+
+html.dark-mode .footer-brand .nav-logo-img {
+  background: rgba(255,255,255,0.9);
+}
+
+html.dark-mode .footer-col h4 { color: #e0e6ec; }
+html.dark-mode .footer-hours h4 { color: #e0e6ec; }
+
+/* ─── Scroll to Top ───────────────────────── */
+html.dark-mode #scroll-top:hover {
+  background: var(--sage-dark);
+}
+
+/* ───────────────────────────────────────────── */
+/*  SALT THERAPY PAGE — DARK MODE                */
+/* ───────────────────────────────────────────── */
+html.salt-page.dark-mode {
+  --cream: #1a1412;
+  --warm-white: #211a16;
+  --sage: #d4926e;
+  --sage-light: #e8a882;
+  --sage-dark: #e0a080;
+  --sand: #8a7a68;
+  --deep: #ede8e0;
+  --mid: #b8a898;
+  --white: #ede8e0;
+  --nav-bg: rgba(26,20,18,0.95);
+  --shadow-soft: 0 8px 40px rgba(0,0,0,0.2);
+  --shadow-med: 0 16px 60px rgba(0,0,0,0.3);
+}
+
+html.salt-page.dark-mode .nav-logo { color: #9fc798 !important; }
+html.salt-page.dark-mode .footer-brand .nav-logo { color: #a8c4a2 !important; }
+
+html.salt-page.dark-mode .nav-cta.btn-outline {
+  color: #9fc798 !important;
+  border-color: #8db386 !important;
+}
+html.salt-page.dark-mode .nav-cta.btn-outline:hover {
+  background: #8db386 !important;
+  color: var(--cream) !important;
+}
+
+html.salt-page.dark-mode .hour-row .time { color: #a8c4a2; }
+
+html.salt-page.dark-mode .hero-blob-1 {
+  background: radial-gradient(circle at 40% 40%, rgba(232,168,130,0.12) 0%, rgba(232,168,130,0.03) 60%, transparent 80%);
+}
+html.salt-page.dark-mode .hero-blob-2 {
+  background: radial-gradient(circle at 60% 60%, rgba(196,122,90,0.08) 0%, transparent 70%);
+}
+
+html.salt-page.dark-mode .salt-crystal-frame {
+  background: linear-gradient(160deg, #4a3228 0%, #5a3a28 40%, #3a2218 100%);
+}
+
+html.salt-page.dark-mode .salt-curve-top {
+  background: var(--cream);
+}
+html.salt-page.dark-mode .salt-curve-bottom {
+  background: var(--warm-white);
+}
+
+html.salt-page.dark-mode .pain-header h2 { color: #ede8e0; }
+html.salt-page.dark-mode .pain-header p { color: #b8a898; }
+html.salt-page.dark-mode .pain-card h3 { color: #ede8e0; }
+html.salt-page.dark-mode .pain-card p { color: rgba(184,168,152,0.8); }
+html.salt-page.dark-mode .pain-icon { background: rgba(196,122,90,0.15); }
+
+html.salt-page.dark-mode #pain { background: #0f0c0a; }
+html.salt-page.dark-mode #salt-benefits { background: #0f0c0a; }
+html.salt-page.dark-mode .cta-box { background: #0f0c0a; }
+html.salt-page.dark-mode .cta-box h2 { color: #ede8e0; }
+html.salt-page.dark-mode .cta-box p { color: #b8a898; }
+html.salt-page.dark-mode .cta-contact-item span { color: rgba(184,168,152,0.6); }
+html.salt-page.dark-mode .cta-contact-item a { color: #ede8e0; }
+html.salt-page.dark-mode footer { background: #0f0c0a; }
+html.salt-page.dark-mode .footer-col h4 { color: #ede8e0; }
+html.salt-page.dark-mode .footer-hours h4 { color: #ede8e0; }
+
+html.salt-page.dark-mode .cta-blob-1 {
+  background: radial-gradient(circle, rgba(232,168,130,0.08) 0%, transparent 70%);
+}
+html.salt-page.dark-mode .cta-blob-2 {
+  background: radial-gradient(circle, rgba(196,122,90,0.06) 0%, transparent 70%);
+}
+html.salt-page.dark-mode .cta-box::before {
+  background: radial-gradient(ellipse at 50% 0%, rgba(196,122,90,0.1) 0%, transparent 60%);
+}
+
+/* ───────────────────────────────────────────── */
+/*  PRODUCTS PAGE — DARK MODE                    */
+/* ───────────────────────────────────────────── */
+html.dark-mode .products-section:nth-child(odd) { background: var(--cream); }
+html.dark-mode .products-section:nth-child(even) { background: var(--warm-white); }
+
+html.dark-mode .products-page-card {
+  background: var(--warm-white);
+  border: 1px solid rgba(255,255,255,0.15);
+}
+html.dark-mode .products-section:nth-child(even) .products-page-card {
+  background: var(--cream);
+}
+
+html.dark-mode .product-placeholder-img {
+  filter: brightness(0.85);
+}
+html.dark-mode .product-placeholder-img::after {
+  background: radial-gradient(circle at 50% 100%, rgba(0,0,0,0.15) 0%, transparent 70%);
+}
+
+html.dark-mode .btn-category {
+  color: var(--sage-dark);
+  background: rgba(131,85,146,0.06);
+  border-color: rgba(131,85,146,0.15);
+}
+html.dark-mode .btn-category:hover {
+  background: var(--sage);
+  color: var(--cream);
+  border-color: var(--sage);
+}
+
+/* ─── Lightbox dark ──────────────────────── */
+html.dark-mode #product-lightbox {
+  background: rgba(0,0,0,0.85);
+}
+html.dark-mode #product-lightbox img {
+  background: var(--warm-white);
+}
+
+/* ───────────────────────────────────────────── */
+/*  ABOUT PAGE — DARK MODE                       */
+/* ───────────────────────────────────────────── */
+html.dark-mode .staff-card {
+  background: var(--warm-white);
+  box-shadow: 0 2px 20px rgba(0,0,0,0.15);
+  border: 1px solid rgba(255,255,255,0.15);
+}
+html.dark-mode .staff-card:hover {
+  box-shadow: 0 8px 32px rgba(0,0,0,0.25);
+}
+html.dark-mode .staff-icon {
+  background: rgba(131,85,146,0.08);
+}
+
+/* ───────────────────────────────────────────── */
+/*  DARK MODE TOGGLE BUTTON                      */
+/* ───────────────────────────────────────────── */
+.theme-toggle {
+  position: relative;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: transparent;
+  border: 1.5px solid var(--sand);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  flex-shrink: 0;
+  padding: 0;
+}
+.theme-toggle:hover {
+  border-color: var(--sage);
+  background: rgba(131,85,146,0.06);
+}
+
+.theme-toggle svg {
+  width: 18px;
+  height: 18px;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.theme-toggle .icon-sun {
+  color: var(--mid);
+  display: none;
+}
+.theme-toggle .icon-moon {
+  color: var(--mid);
+  display: block;
+}
+
+html.dark-mode .theme-toggle .icon-sun {
+  display: block;
+}
+html.dark-mode .theme-toggle .icon-moon {
+  display: none;
+}
+
+html.dark-mode .theme-toggle {
+  border-color: var(--sand);
+}
+html.dark-mode .theme-toggle:hover {
+  border-color: var(--sage);
+  background: rgba(131,85,146,0.08);
+}
+
+/* ─── Mobile menu toggle ──────────────────── */
+#mobile-menu .theme-toggle {
+  border-color: var(--sand);
+}

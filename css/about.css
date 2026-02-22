@@ -1,0 +1,109 @@
+/* ───────────────────────────────────────────── */
+/*  ABOUT US PAGE                                */
+/* ───────────────────────────────────────────── */
+
+/* Hero — centered single column */
+#hero.about-hero { min-height: auto; padding: 160px 0 80px; }
+.about-hero .hero-grid { grid-template-columns: 1fr; }
+.about-hero .hero-content { text-align: center; max-width: 720px; margin: 0 auto; }
+.about-hero .hero-eyebrow { margin: 0 auto 24px; }
+.about-hero .hero-sub { max-width: 620px; margin: 0 auto 40px; }
+.about-hero .hero-ctas { justify-content: center; align-items: center; }
+
+/* ─── Story Section ─────────────────────────── */
+#our-story {
+  background: var(--cream);
+  padding: clamp(80px, 12vw, 140px) 0;
+}
+.story-container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+.story-container .benefits-header {
+  margin-bottom: 48px;
+}
+.story-quote {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: clamp(1.4rem, 3vw, 1.8rem);
+  font-style: italic;
+  font-weight: 400;
+  color: var(--sage-dark);
+  text-align: center;
+  margin-bottom: 48px;
+  line-height: 1.4;
+}
+.story-text p {
+  font-size: 1rem;
+  line-height: 1.85;
+  color: var(--mid);
+  margin-bottom: 24px;
+}
+.story-text p:last-child {
+  margin-bottom: 0;
+}
+
+/* ─── Staff Section ─────────────────────────── */
+#our-staff {
+  background: var(--warm-white);
+  padding: clamp(80px, 12vw, 140px) 0;
+}
+.staff-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 32px;
+  margin-top: 48px;
+}
+.staff-card {
+  background: var(--white);
+  border-radius: var(--radius-sm);
+  padding: 32px 24px;
+  text-align: center;
+  box-shadow: 0 2px 20px rgba(0,0,0,0.04);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.staff-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 32px rgba(0,0,0,0.08);
+}
+.staff-icon {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  background: rgba(131,85,146,0.12);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 20px;
+  font-size: 1.5rem;
+  color: var(--sage);
+}
+.staff-card h3 {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: var(--deep);
+  margin-bottom: 8px;
+}
+.staff-role {
+  font-size: 0.9rem;
+  color: var(--sage);
+  font-weight: 500;
+  margin-bottom: 4px;
+}
+.staff-since {
+  font-size: 0.82rem;
+  color: var(--mid);
+}
+
+/* ─── CTA Section ────────────────────────────── */
+#cta.about-cta { background: var(--cream); }
+
+/* ─── Responsive ─────────────────────────────── */
+@media (max-width: 640px) {
+  .staff-grid {
+    grid-template-columns: 1fr;
+    max-width: 320px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}

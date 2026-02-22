@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="en" class="salt-page">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Salt Therapy — Reaves Chiropractic Health Centre</title>
+		<script>
+		(function(){var d=document.documentElement,t=localStorage.getItem('theme'),dk=t==='dark'||(t!=='light'&&window.matchMedia('(prefers-color-scheme:dark)').matches);if(dk)d.classList.add('dark-mode');var m=document.createElement('meta');m.name='theme-color';m.content=dk?'#1a1412':'#f5f0e8';document.head.appendChild(m);})();
+		</script>
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet" />
+		<link rel="icon" type="image/x-icon" href="favicon.ico">
+		<link rel="icon" type="image/png" href="favicon.png">
+		<link rel="apple-touch-icon" href="assets/images/apple-touch-icon.png">
+		<link rel="stylesheet" href="css/default.css" />
+		<link rel="stylesheet" href="css/styles.css" />
+		<link rel="stylesheet" href="css/responsive.css" />
+		<link rel="stylesheet" href="css/salt-therapy.css" />
+		<link rel="stylesheet" href="css/dark-mode.css" />
+	</head>
+
+	<body>
+		<!-- ─── NAV ──────────────────────────────────── -->
+		<nav id="nav">
+			<div class="container">
+				<div class="nav-inner">
+					<a href="index.html" class="nav-logo">
+						<img src="assets/images/Reaves-Chiropractic-Logo.png" alt="Reaves Chiropractic Logo" class="nav-logo-img">
+						<div>Reaves Chiropractic
+						<span>Health Centre</span></div>
+					</a>
+					<div class="nav-links">
+						<a href="index.html#benefits">Benefits</a>
+						<a href="products.html">Products</a>
+						<a href="index.html#process">How It Works</a>
+						<a href="index.html#about">About</a>
+						<a href="salt-therapy.html">Salt Therapy</a>
+						<a href="index.html#forms" class="btn-outline nav-cta">Download Forms</a>
+					</div>
+					<button class="theme-toggle" onclick="toggleTheme()" aria-label="Toggle dark mode">
+						<svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+						<svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
+					</button>
+					<div class="hamburger" onclick="toggleMenu()">
+						<span></span><span></span><span></span>
+					</div>
+				</div>
+			</div>
+		</nav>
+
+		<!-- ─── MOBILE MENU ───────────────────────────── -->
+		<div id="mobile-menu">
+			<a href="index.html#benefits" onclick="toggleMenu()">Benefits</a>
+			<a href="products.html" onclick="toggleMenu()">Products</a>
+			<a href="index.html#process" onclick="toggleMenu()">How It Works</a>
+			<a href="index.html#testimonials" onclick="toggleMenu()">Reviews</a>
+			<a href="index.html#about" onclick="toggleMenu()">About</a>
+			<a href="salt-therapy.html" onclick="toggleMenu()">Salt Therapy</a>
+			<a href="index.html#forms" onclick="toggleMenu()">Download Forms</a>
+		</div>
+
+		<!-- ─── HERO ──────────────────────────────────── -->
+		<section id="hero" class="salt-hero">
+			<div class="hero-blob-1"></div>
+			<div class="hero-blob-2"></div>
+			<div class="container">
+				<div class="hero-grid">
+					<div class="hero-content">
+						<div class="hero-eyebrow reveal">Breathe Better. Feel Better.</div>
+						<h1 class="hero-title reveal reveal-delay-1">
+							Discover the<br>Healing Power of<br><em>Halotherapy</em>
+						</h1>
+						<p class="hero-sub reveal reveal-delay-2">
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+						</p>
+						<div class="hero-ctas reveal reveal-delay-3">
+							<a href="#how-it-works" class="btn-primary">Learn How It Works</a>
+							<a href="https://squareup.com/appointments/book/ienp79va1ebf4i/L4TV2Q803AN4N/start" target="_blank" class="btn-outline">Book a Session</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- ─── WHAT IS SALT THERAPY ─────────────────── -->
+		<section id="what-is-salt-therapy">
+			<div class="container">
+				<div class="benefits-header">
+					<span class="benefits-eyebrow">Ancient Remedy, Modern Science</span>
+					<h2 class="reveal">What Is Halotherapy?</h2>
+					<p class="reveal reveal-delay-1">Halotherapy (also know as Salt Therapy) is an inhalation of kinetically activated
+						pure dry salt particles. Dry salt is super absorbent, antibacterial, and antifungal. These micro sized salt
+						particles travel deep into the respiratory system and absorb excess moisture, remove allergens, toxins, foreign
+						substances, break up stagnated mucus, restore the function of cilia and widen the airways for better lung
+						function and more efficient oxygen distribution. Halotherapy is also topically beneficial and can help manage
+						many skin conditions.</p>
+				</div>
+				<div class="benefits-layout">
+					<div class="reveal">
+						<div class="about-frame salt-crystal-frame">
+							<svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+								<!-- Large crystal -->
+								<polygon points="70,160 50,90 75,50 105,45 120,85 110,160" fill="rgba(255,180,140,0.85)" stroke="rgba(255,220,200,0.4)" stroke-width="1"/>
+								<polygon points="75,50 105,45 95,55 78,58" fill="rgba(255,210,180,0.7)"/>
+								<polygon points="50,90 75,50 78,58 55,95" fill="rgba(230,150,110,0.8)"/>
+								<!-- Medium crystal -->
+								<polygon points="100,160 90,100 110,65 140,60 155,95 145,160" fill="rgba(255,160,120,0.8)" stroke="rgba(255,200,170,0.3)" stroke-width="1"/>
+								<polygon points="110,65 140,60 135,72 115,74" fill="rgba(255,195,165,0.7)"/>
+								<polygon points="90,100 110,65 115,74 96,105" fill="rgba(220,130,90,0.75)"/>
+								<!-- Small crystal left -->
+								<polygon points="40,160 35,120 50,95 65,100 68,130 55,160" fill="rgba(255,170,130,0.75)" stroke="rgba(255,210,185,0.3)" stroke-width="1"/>
+								<polygon points="50,95 65,100 60,105 48,100" fill="rgba(255,200,170,0.6)"/>
+								<!-- Small crystal right -->
+								<polygon points="135,160 130,115 148,90 165,95 168,125 155,160" fill="rgba(245,150,110,0.8)" stroke="rgba(255,200,170,0.3)" stroke-width="1"/>
+								<polygon points="148,90 165,95 160,102 150,98" fill="rgba(255,190,160,0.65)"/>
+								<!-- Inner glow -->
+								<ellipse cx="100" cy="120" rx="50" ry="30" fill="rgba(255,220,180,0.15)"/>
+								<!-- Sparkle highlights -->
+								<circle cx="80" cy="75" r="2" fill="rgba(255,255,255,0.6)"/>
+								<circle cx="125" cy="82" r="1.5" fill="rgba(255,255,255,0.5)"/>
+								<circle cx="55" cy="108" r="1.5" fill="rgba(255,255,255,0.45)"/>
+								<circle cx="150" cy="105" r="1.8" fill="rgba(255,255,255,0.5)"/>
+							</svg>
+						</div>
+					</div>
+					<div class="benefits-list">
+						<div class="benefit-item reveal">
+							<div class="benefit-num salt-benefit-num">1</div>
+							<div>
+								<h3>100% Natural & Drug-Free</h3>
+								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+							</div>
+						</div>
+						<div class="benefit-item reveal reveal-delay-1">
+							<div class="benefit-num salt-benefit-num">2</div>
+							<div>
+								<h3>Clinically Studied</h3>
+								<p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+							</div>
+						</div>
+						<div class="benefit-item reveal reveal-delay-2">
+							<div class="benefit-num salt-benefit-num">3</div>
+							<div>
+								<h3>Deeply Relaxing</h3>
+								<p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- ─── BENEFITS OF SALT THERAPY ─────────────── -->
+		<section id="salt-benefits">
+			<div class="salt-curve-top"></div>
+			<div class="salt-curve-bottom"></div>
+			<div class="container">
+				<div class="pain-header">
+					<h2 class="reveal">Who Can Benefit?</h2>
+					<p class="reveal reveal-delay-1">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+				</div>
+				<div class="pain-grid">
+					<div class="pain-card reveal">
+						<div class="pain-icon">🫁</div>
+						<h3>Respiratory Conditions</h3>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+					</div>
+					<div class="pain-card reveal reveal-delay-1">
+						<div class="pain-icon">✨</div>
+						<h3>Skin Conditions</h3>
+						<p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+					</div>
+					<div class="pain-card reveal reveal-delay-2">
+						<div class="pain-icon">😌</div>
+						<h3>Stress & Anxiety</h3>
+						<p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+					</div>
+					<div class="pain-card reveal reveal-delay-3">
+						<div class="pain-icon">🏃</div>
+						<h3>Athletic Performance</h3>
+						<p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- ─── HOW IT WORKS ─────────────────────────── -->
+		<section id="how-it-works">
+			<div class="container">
+				<div class="process-header">
+					<span class="benefits-eyebrow">Your Salt Therapy Session</span>
+					<h2 class="reveal">Simple, Relaxing<br>& Effective</h2>
+					<p class="reveal reveal-delay-1">Each session lasts about 30 minutes. Here's what to expect.</p>
+				</div>
+				<div class="process-steps">
+					<div class="process-step reveal">
+						<div class="step-circle">
+							🚪
+							<div class="step-num">1</div>
+						</div>
+						<h3>Enter the Salt Room</h3>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+					</div>
+					<div class="process-step reveal reveal-delay-1">
+						<div class="step-circle">
+							🌬️
+							<div class="step-num">2</div>
+						</div>
+						<h3>Breathe & Relax</h3>
+						<p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.</p>
+					</div>
+					<div class="process-step reveal reveal-delay-2">
+						<div class="step-circle">
+							🧘
+							<div class="step-num">3</div>
+						</div>
+						<h3>Absorb the Benefits</h3>
+						<p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore.</p>
+					</div>
+					<div class="process-step reveal reveal-delay-3">
+						<div class="step-circle">
+							🌟
+							<div class="step-num">4</div>
+						</div>
+						<h3>Feel Refreshed</h3>
+						<p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia.</p>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- ─── FAQ ───────────────────────────────────── -->
+		<section id="faq">
+			<div class="container">
+				<div class="benefits-header">
+					<span class="benefits-eyebrow">Common Questions</span>
+					<h2 class="reveal">Salt Therapy FAQ</h2>
+				</div>
+				<div class="faq-list">
+					<div class="testimonial-card faq-card reveal">
+						<div class="faq-inner">
+							<div class="benefit-num">Q</div>
+							<div>
+								<h3>Lorem ipsum dolor sit amet?</h3>
+								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+							</div>
+						</div>
+					</div>
+					<div class="testimonial-card faq-card reveal reveal-delay-1">
+						<div class="faq-inner">
+							<div class="benefit-num">Q</div>
+							<div>
+								<h3>Consectetur adipiscing elit?</h3>
+								<p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+							</div>
+						</div>
+					</div>
+					<div class="testimonial-card faq-card reveal reveal-delay-2">
+						<div class="faq-inner">
+							<div class="benefit-num">Q</div>
+							<div>
+								<h3>Sed do eiusmod tempor?</h3>
+								<p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+							</div>
+						</div>
+					</div>
+					<div class="testimonial-card faq-card reveal reveal-delay-3">
+						<div class="faq-inner">
+							<div class="benefit-num">Q</div>
+							<div>
+								<h3>Ut enim ad minim veniam?</h3>
+								<p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- ─── CTA ───────────────────────────────────── -->
+		<section id="cta" class="salt-cta">
+			<div class="cta-blob cta-blob-1"></div>
+			<div class="cta-blob cta-blob-2"></div>
+			<div class="container">
+				<div class="cta-box reveal">
+					<span class="cta-eyebrow">Start Breathing Better Today</span>
+					<h2>Ready to Try<br><em>Salt Therapy?</em></h2>
+					<p>Experience the healing power of halotherapy at Renegade Wellness Center. Book your first session and feel
+						the difference.</p>
+					<div class="cta-buttons">
+						<a href="https://squareup.com/appointments/book/ienp79va1ebf4i/L4TV2Q803AN4N/start" target="_blank" class="btn-primary">Book Your Session</a>
+						<a href="https://www.renegadewellnesscenter.com" target="_blank" class="btn-outline">Renegade Wellness Center</a>
+					</div>
+					<div class="cta-contact">
+						<div class="cta-contact-item">
+							<span>Call Us</span>
+							<a href="tel:+18285149276">(828) 514-9276</a>
+						</div>
+						<div class="cta-divider"></div>
+						<div class="cta-contact-item">
+							<span>Email Us</span>
+							<a href="mailto:renegadewellnesscenter@gmail.com">renegadewellnesscenter@gmail.com</a>
+						</div>
+						<div class="cta-divider"></div>
+						<div class="cta-contact-item">
+							<span>Location</span>
+							<a href="https://maps.apple.com/?address=630+W+21st+St,+Newton,+NC+28658" class="cta-location-link">630 W 21st, Newton, NC</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- ─── FOOTER ────────────────────────────────── -->
+		<footer>
+			<div class="container">
+				<div class="footer-inner">
+					<div class="footer-brand">
+						<a href="index.html" class="nav-logo">
+							<img src="assets/images/Reaves-Chiropractic-Logo.png" alt="Reaves Chiropractic Logo" class="nav-logo-img">
+							<div>Reaves Chiropractic
+							<span>Health Centre</span></div>
+						</a>
+						<p>Express natural wellness in people with the most effective ways to attain optimum health. Focus on overcoming dis-ease by caring for the sick and suffering with honesty and integrity while caring enough to make necessary sacrifices to positively impact their lives.</p>
+					</div>
+					<div class="footer-col">
+						<h4>Navigate</h4>
+						<ul>
+							<li><a href="index.html#benefits">Benefits</a></li>
+							<li><a href="products.html">Products</a></li>
+							<li><a href="index.html#process">How It Works</a></li>
+							<li><a href="index.html#testimonials">Testimonials</a></li>
+							<li><a href="index.html#about">About</a></li>
+							<li><a href="salt-therapy.html">Salt Therapy</a></li>
+							<li><a href="index.html#forms">Download Forms</a></li>
+						</ul>
+					</div>
+					<div class="footer-col">
+						<h4>Contact</h4>
+						<ul>
+							<li><a href="tel:+18284642080">(828) 464-2080 - (Phone)</a></li>
+							<li><a href="tel:">(828) 464-2133 - (Fax)</a></li>
+							<li><a href="https://maps.apple.com/?address=630+W+21st+St,+Newton,+NC" class="footer-address">630 W
+								21st St<br />Newton, NC 28658</a></li>
+						</ul>
+					</div>
+					<div class="footer-hours">
+						<h4>Office Hours</h4>
+						<div class="hour-row"><span class="day">Monday</span><span class="time">8:30am – 12pm, 1:30pm - 5:30pm</span></div>
+						<div class="hour-row"><span class="day">Tuesday</span><span class="time">Closed</span></div>
+						<div class="hour-row"><span class="day">Wednesday</span><span class="time">8:30am – 12pm, 1:30pm - 5:30pm</span></div>
+						<div class="hour-row"><span class="day">Thursday</span><span class="time">8:30am – 12pm, 1:30pm - 5:30pm</span></div>
+						<div class="hour-row"><span class="day">Friday</span><span class="time">8:30am – 12pm, 1:30pm - 5:30pm</span></div>
+						<div class="hour-row"><span class="day">Saturday</span><span class="time">Closed</span></div>
+						<div class="hour-row"><span class="day">Sunday</span><span class="time">Closed</span></div>
+					</div>
+				</div>
+				<div class="footer-bottom">
+					<p>&copy; 2025 Reaves Chiropractic Health Centre. All rights reserved.</p>
+<!--				<div class="footer-links">
+						<a href="#">Privacy Policy</a>
+						<a href="#">Terms of Service</a>
+						<a href="#">Accessibility</a>
+					</div>-->
+				</div>
+			</div>
+		</footer>
+
+		<!-- ─── SCROLL TO TOP ─────────────────────────── -->
+		<button id="scroll-top" onclick="window.scrollTo({top:0,behavior:'smooth'})">&#8593;</button>
+
+		<script>
+		/* ─── NAV SCROLL ─────────── */
+		const nav = document.getElementById('nav');
+		const scrollTopBtn = document.getElementById('scroll-top');
+		window.addEventListener('scroll', () => {
+			nav.classList.toggle('scrolled', window.scrollY > 40);
+			scrollTopBtn.classList.toggle('visible', window.scrollY > 400);
+		});
+
+		/* ─── MOBILE MENU ─────────── */
+		function toggleMenu() {
+			const menu = document.getElementById('mobile-menu');
+			const hamburger = document.querySelector('.hamburger');
+			const isOpen = menu.classList.toggle('open');
+			hamburger.classList.toggle('active', isOpen);
+			document.body.style.overflow = isOpen ? 'hidden' : '';
+		}
+
+		/* ─── SCROLL REVEAL ─────────── */
+		const reveals = document.querySelectorAll('.reveal');
+		const observer = new IntersectionObserver((entries) => {
+			entries.forEach(entry => {
+				if (entry.isIntersecting) {
+					entry.target.classList.add('visible');
+				}
+			});
+		}, { threshold: 0.1, rootMargin: '0px 0px -40px 0px' });
+		reveals.forEach(el => observer.observe(el));
+
+		/* ─── DARK MODE TOGGLE ─────────── */
+		function toggleTheme() {
+			const d = document.documentElement;
+			d.classList.add('theme-transition');
+			d.classList.toggle('dark-mode');
+			const isDark = d.classList.contains('dark-mode');
+			localStorage.setItem('theme', isDark ? 'dark' : 'light');
+			document.querySelector('meta[name="theme-color"]').content = isDark ? '#1a1412' : '#f5f0e8';
+			setTimeout(() => d.classList.remove('theme-transition'), 600);
+		}
+		</script>
+
+	</body>
+</html>

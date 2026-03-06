@@ -224,12 +224,12 @@ p { font-size: clamp(0.95rem, 1.5vw, 1.05rem); line-height: 1.75; }
   overflow: hidden;
   aspect-ratio: 0.85;
   background: linear-gradient(160deg, #b898c2 0%, #a878b8 30%, #835592 100%);
-  display: flex; align-items: flex-end; justify-content: center;
+  display: flex; align-items: center; justify-content: center;
   box-shadow: var(--shadow-med);
 }
 .hero-figure {
-  width: 80%; position: relative;
-  animation: floatFigure 6s ease-in-out infinite;
+  width: 100%; position: relative;
+  display: block; margin: 0 auto;
 }
 @keyframes floatFigure {
   0%, 100% { transform: translateY(0); }

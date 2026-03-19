@@ -21,7 +21,8 @@
   .testimonials-grid { grid-template-columns: 1fr; }
   .about-values { grid-template-columns: 1fr; }
   .footer-inner { grid-template-columns: 1fr; }
-  .cta-contact { gap: 24px; }
+  .cta-contact { gap: 24px; flex-direction: column; align-items: center; }
+  .cta-divider { display: none; }
   .footer-bottom { flex-direction: column; align-items: flex-start; }
 }
 @media (max-width: 400px) {
